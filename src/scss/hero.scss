@@ -1,0 +1,151 @@
+.header {
+	height: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+.slider {
+	height: 100%;
+	width: 100%;
+	&__slide {
+		background: url('@img/hero_image-1.jpg') center/cover no-repeat;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&._slide-2 {
+			background-image: url('@img/hero_image-2.jpg');
+		}
+	}
+	&__nav {
+		color: #fff;
+		width: 186px;
+		position: absolute;
+		top: 61.9%;
+		right: 15.1%;
+		display: flex;
+		align-items: center;
+		z-index: 3;
+	}
+	&__prev,
+	&__next {
+		position: absolute;
+		top: -14px;
+		cursor: pointer;
+		font-weight: 300;
+		font-size: 11px;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		img {
+			position: absolute;
+			top: 9px;
+		}
+	}
+	&__prev {
+		left: -42px;
+		justify-content: flex-end;
+		img {
+			left: -1px;
+		}
+	}
+	&__next {
+		right: -44px;
+		img {
+			right: -3px;
+		}
+	}
+	& .swiper-pagination-progressbar{
+		background: rgba(255, 255, 255, 0.32);
+		height: 1px;
+	}
+	& .swiper-pagination-progressbar-fill  {
+		background: #fff;
+	}
+}
+
+.body-slide {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 96px 64px 39px;
+	// overflow: auto;
+	color: #fff;
+	&__head {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0px 0 15px 18.2%;
+		gap: 39px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 68px;
+		max-width: 490px;
+	}
+	&__text {
+		margin: 0 0 0 11px;
+		max-width: 81px;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 12px;
+		text-align: right;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			width: 42.4px;
+			height: 1px;
+			background: rgba(255, 255, 255, 0.4);
+			position: absolute;
+			top: 4px;
+			left: 109%;
+		}
+	}
+	&__footer,
+	&__link {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06em;
+		color: #fff;
+	}
+	&__footer {
+		display: flex;
+		align-items: center;
+	}
+	&__socials {
+		margin: 0 121px 0 0;
+		display: flex;
+		gap: 16.5px;
+	}
+	&__city {
+		margin: 0 6.39% 0 0;
+		& .select {
+			&__header {
+				background: rgba(255, 255, 255, 0.5);
+				box-shadow: 0px 1.15336px 1.22544px rgba(0, 0, 0, 0.2), inset 0px -0.288339px 0.0720847px rgba(255, 255, 255, 0.23);
+				backdrop-filter: blur(1px);
+				border-radius: 8.70783px;
+			}
+			&__body {
+				top: auto;
+				bottom: 120%;
+
+			}
+		}
+	}
+	&__contacts {
+		display: flex;
+		gap: 32px;
+	}
+	&__link {
+	}
+}
