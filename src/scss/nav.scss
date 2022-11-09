@@ -136,7 +136,7 @@
 			}
 		}
 		&__lang {
-			margin: 0 32px 0 0;
+			margin: 0 35px 0 0;
 		}
 		&__send {
 			padding: 14px 33px 13px 36px;
@@ -198,6 +198,14 @@
 	.burger {
 		&__text {
 			display: none;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.nav {
+		&__lang {
+			margin: 0 33px 0 0;
 		}
 	}
 }

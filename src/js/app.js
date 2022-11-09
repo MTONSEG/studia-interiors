@@ -15,6 +15,17 @@ const swiper = new Swiper('.swiper', {
 		nextEl: ".slider__next",
 		prevEl: ".slider__prev",
 	},
-	slidesPerView: 1.175,
+	slidesPerView: 1.192,
+	breakpoints: {
+		575: {
+			slidesPerView: 1.174
+		},
+		769: {
+			slidesPerView: 1.188,
+		},
+		1025: {
+			slidesPerView: 1.175,
+		}
+	}
 });
 

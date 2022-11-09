@@ -8,7 +8,7 @@
 	height: 100%;
 	width: 100%;
 	&__slide {
-		background: url('@img/hero_image-1.jpg') center/cover no-repeat;
+		background: url('@img/hero_image-1.jpg') 0 0/100% 100% no-repeat;
 		img {
 			display: block;
 			width: 100%;
@@ -17,7 +17,30 @@
 		}
 		&._slide-2 {
 			background-image: url('@img/hero_image-2.jpg');
+			display: flex;
+			align-items: flex-end;
+			color: #fff;
 		}
+	}
+	&__text {
+		transform: translate(-54px, -147px) rotate(-90deg);
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06em;
+		margin: 0 0 11px 3px;
+
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 47px;
+		letter-spacing: 0.04em;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1px #fff;
+		max-width: 318px;
 	}
 	&__nav {
 		color: #fff;
@@ -35,7 +58,7 @@
 		top: -14px;
 		cursor: pointer;
 		font-weight: 300;
-		font-size: 11px;
+		font-size: 12px;
 		width: 30px;
 		height: 30px;
 		display: flex;
@@ -72,7 +95,6 @@
 	flex-direction: column;
 	height: 100%;
 	padding: 96px 64px 39px;
-	// overflow: auto;
 	color: #fff;
 	&__head {
 		flex: 1 1 auto;
@@ -98,14 +120,21 @@
 		letter-spacing: 0.12em;
 		text-transform: uppercase;
 		position: relative;
+		&::before,
 		&::after {
-			content: "";
 			display: block;
-			width: 42.4px;
-			height: 1px;
+			content: "";
 			background: rgba(255, 255, 255, 0.4);
 			position: absolute;
 			top: 4px;
+			height: 1px;
+		}
+		&::before {
+			left: -16px;
+			width: 10px;
+		}
+		&::after {
+			width: 42.4px;
 			left: 109%;
 		}
 	}
@@ -130,10 +159,9 @@
 		margin: 0 6.39% 0 0;
 		& .select {
 			&__header {
-				background: rgba(255, 255, 255, 0.5);
-				box-shadow: 0px 1.15336px 1.22544px rgba(0, 0, 0, 0.2), inset 0px -0.288339px 0.0720847px rgba(255, 255, 255, 0.23);
-				backdrop-filter: blur(1px);
-				border-radius: 8.70783px;
+				background: transparent;
+				border: 1px solid #C4C4C4;
+				border-radius: 88px;
 			}
 			&__body {
 				top: auto;
@@ -146,6 +174,147 @@
 		display: flex;
 		gap: 32px;
 	}
-	&__link {
+}
+
+@media (max-width: 1024px) {
+	.slider {
+		&__nav {
+			color: #fff;
+			width: 149px;
+			position: absolute;
+			top: 61.1%;
+			right: 20.3%;
+			display: flex;
+			align-items: center;
+			z-index: 3;
+		}
+		&__text {
+			transform: translate(-76px, -156px) rotate(-90deg);
+		}
+		&__subtitle {
+			margin: 0 0 10px 3px;
+		}
+		&__title {
+			font-size: 32px;
+			line-height: 31px;
+		}
+	}
+	.body-slide {
+		padding: 96px 56px 32px;
+		&__head {
+			margin: 0px 0 26px 13.66%;
+			gap: 30px;
+		}
+		&__title {
+			font-size: 48px;
+			line-height: 59px;
+		}
+		&__text {
+			max-width: 110px;
+			text-align: left;
+			margin: 0 0 0 17px;
+			&::after {
+				left: 105%;
+				width: 49.4px;
+			}
+		}
+		&__socials {
+			gap: 15.5px;
+			margin: 0 79px 0 0;
+		}
+		&__city {
+			margin: 0px 4.91% 0 0;
+		}
+		&__contacts {
+			gap: 39px;
+		}
 	}
 }
+
+@media (max-width: 991px) {
+	.slider {
+		&__nav {
+			top: 60.3%;
+			right: 23.5%;
+		}
+		&__title {
+			max-width: 100%;
+		}
+		&__text {
+			transform: translate(-117px, -182px) rotate(-90deg);
+		}
+	}
+	.body-slide {
+		padding: 84px 47px 32px;
+		&__head {
+			margin: 0px 0 21px 13.66%;
+			gap: 29px;
+		}
+		&__title {
+			font-size: 44px;
+			line-height: 54px;
+			max-width: 261px;
+		}
+		&__socials {
+			margin: 0 63px 0 0;
+		}
+		&__city {
+			margin: 0px 5.7% 0 0;
+		}
+		&__contacts {
+			gap: 35px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.slider {
+		&__nav {
+			top: 27.2%;
+			right: 59.2%;
+			width: 88px;
+		}
+		&__text {
+			transform: translate(-68px, -114px) rotate(-90deg);
+		}
+		&__subtitle {
+			display: none;
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 18px;
+			color: #fff;
+			-webkit-text-fill-color: #fff;
+			-webkit-text-stroke: 0;
+		}
+	}
+	.body-slide {
+		padding: 84px 14px 21px 24px;
+		&__head {
+			margin: 34px 0 0 0;
+			justify-content: center;
+			gap: 35px;
+		}
+		&__title {
+			font-size: 40px;
+			line-height: 39px;
+		}
+		&__socials {
+			display: none;
+		}
+		&__contacts {
+			flex-direction: column;
+			gap: 6px;
+			text-align: right;
+		}
+		&__city {
+			margin: 0px 16.9% 0 0;
+			& .select {
+				&__header {
+					padding: 5px 10px 5px 13px;
+				}
+			}
+		}
+	}
+}
+
