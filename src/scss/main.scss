@@ -1,0 +1,269 @@
+.philosophy {
+	padding: 141px 0;
+	&__container {
+		max-width: 1440px;
+		padding: 0 0 0 62px;
+	}
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin: 0 0 78px 0;
+	}
+	&__block-title {
+		position: absolute;
+		top: 99px;
+		left: -14px;
+		transform: rotate(-90deg);
+		font-weight: 700;
+		font-size: 8px;
+		line-height: 14px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: rgb(130, 130, 130, 0.32);
+		&._bottom {
+			left: calc(100% - 111px);
+			top: 48.8%;
+		}
+		&::before {
+			content: "";
+			width: 57px;
+			height: 1px;
+			display: block;
+			position: absolute;
+			right: calc(100% + 13px);
+			top: 50%;
+			background: rgb(130, 130, 130, 0.32);;
+		}
+}
+	&__article {
+		width: 47%;
+		padding: 80px 0 0 9.8%;
+	}
+	&__title {
+		font-size: 36px;
+		line-height: 44px;
+		margin: 0 0 25px 0;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		color: rgba(8, 8, 8, 0.7);
+		margin: 0 0 12px 0;
+		&.mb {
+			margin: 0px 0 55px 0px;
+		}
+	}
+	&__more {
+		color: #080808;
+		margin: 0 0 0 17px;
+		&::before,
+		&::after {
+			top: 6px;
+			background: rgba(49, 49, 49, 0.2);
+		}
+		&::after {
+			width: 53.4px;
+		}
+	}
+	&__top-image {
+		width: 37.22%;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__footer {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 0 0 0 9.79%;
+	}
+	&__bottom-image {
+		position: relative;
+		max-width: 316px;
+		margin: 0px 26.69% 0 0;
+		& .image-1 {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		& .image-2 {
+			max-width: 279px;
+			position: absolute;
+			left: calc(100% - 80px);
+			bottom: calc(100% - 47px);
+		}
+	}
+
+	&__bottom-text {
+		position: relative;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 170.66%;
+		color: rgb(8, 8, 8, 0.7);
+		max-width: 380px;
+		padding: 45px 0 0 0;
+		img {
+			position: absolute;
+			top: 54px;
+			left: -49px;
+		}
+	}
+}
+
+@media (max-width: 1220px) {
+	.philosophy {
+		padding: 123px 0;
+		&__top-image {
+			width: 36.3%;
+			height: 439px;
+		}
+		&__head {
+			margin: 0 0 161px 0;
+		}
+		&__block-title {
+			top: 80px;
+			left: -20px;
+			&._bottom {
+				display: none;
+			}
+		}
+		&__article {
+			width: 55%;
+			padding: 57px 0 0 10.1%;
+		}
+		&__title {
+			font-size: 32px;
+			line-height: 39px;
+			margin: 0 0 12px 0;
+		}
+		&__text {
+			&.mb {
+				margin: 0px 0 35px 0px;
+			}
+		}
+		&__footer {
+			padding: 0px 0 0 10%;
+		}
+		&__bottom-image {
+			max-width: 191px;
+			margin: 0px 23.91% 0 0;
+			& .image-2 {
+				max-width: 190px;
+				position: absolute;
+				left: calc(100% - 36px);
+				bottom: calc(100% - 23px);
+			}
+		}
+		&__bottom-text {
+			font-size: 16px;
+			padding: 0;
+			margin: 0 0 18px 0;
+			max-width: 313px;
+			img {
+				top: 9px;
+				left: -31px;
+				width: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.philosophy {
+		padding: 104px 0;
+		&__container {
+			padding: 0px 126px 0 124px;
+		}
+		&__block-title {
+			top: 23px;
+			left: -90px;
+		}
+		&__top-image {
+			display: none;
+		}
+		&__article {
+			width: 100%;
+			padding: 0;
+		}
+		&__head {
+			margin: 0px 0 205px 0;
+		}
+		&__text {
+			&.mb {
+				margin: 0px 0 32px 0px;
+			}
+		}
+		&__footer {
+			padding: 0;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__bottom-image {
+			max-width: 153px;
+			margin: 0 0 19px 0px;
+			& .image-2 {
+				max-width: 383px;
+				position: absolute;
+				left: calc(100% - 16px);
+				bottom: calc(100% - 95px);
+			}
+		}
+		&__bottom-text {
+			align-self: flex-end;
+			margin: 1px -2px 0 0px;
+			max-width: 290px;
+			img {
+				left: -29px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.philosophy {
+		padding: 80px 0;
+		&__container {
+			padding: 0px 26px 0 24px;
+		}
+		&__head {
+			margin: 0px 0 199px 0;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+			margin: 0 0 13px 0;
+		}
+		&__bottom-image {
+			max-width: 131px;
+			& .image-2 {
+				max-width: 264px;
+				left: calc(100% - 68px);
+				bottom: calc(100% - 44px);
+			}
+		}
+		&__bottom-text {
+			margin: 58px -5px 0 0px;
+			img {
+				left: -42px;
+			}
+		}
+	}
+}
+
+@media (max-width: 370px) {
+	.philosophy {
+		&__bottom-image {
+			max-width: 131px;
+			& .image-2 {
+				max-width: 204px;
+				left: 35%;
+				bottom: calc(100% - 44px);
+			}
+		}
+	}
+}

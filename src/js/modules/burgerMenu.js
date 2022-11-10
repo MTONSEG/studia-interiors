@@ -1,5 +1,5 @@
 const iconBurger = document.querySelector('.burger__icon');
-const menuBurger = document.querySelector('.header__list');
+const menuBurger = document.querySelector('.nav__list');
 
 iconBurger.addEventListener('click', event => {
 	iconBurger.classList.toggle('_active');
