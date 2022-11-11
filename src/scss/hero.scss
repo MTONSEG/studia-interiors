@@ -156,12 +156,13 @@
 		gap: 16.5px;
 	}
 	&__city {
-		margin: 0 6.39% 0 0;
+		margin: 0px 6.31% 0 0;
 		& .select {
 			&__header {
 				background: transparent;
 				border: 1px solid #C4C4C4;
 				border-radius: 88px;
+				padding: 4px 13px 5px 13px;
 			}
 			&__body {
 				top: auto;
