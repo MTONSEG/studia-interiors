@@ -5,15 +5,50 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20221113185415">
 	<title>Студия дизайна</title>
 </head>
 
 <body>
 	<div class="wrapper">
-
-		<header class="header">
+		<header class="header _fullscreen">
 			<nav class="header__nav nav">
+	<div class="burger-menu">
+		<div class="container">
+			<div class="burger-menu__row">
+					<div class="body-slide__footer">
+						<div class="body-slide__socials">
+							<a href="#" class="body-slide__link">Fb</a>
+							<a href="#" class="body-slide__link">In</a>
+							<a href="#" class="body-slide__link">Be</a>
+						</div>
+						<div class="body-slide__city select">
+							<div class="select__header">
+								<img src="img/icons/location.svg" alt="location" class="select__icon-location">
+								<div class="select__current">
+									Berlin
+								</div>
+								<img src="img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
+							</div>
+							<ul class="select__body">
+								<li class="select__item">
+									Berlin
+								</li>
+								<li class="select__item">
+									Dnipro
+								</li>
+							</ul>
+						</div>
+						<div class="body-slide__contacts">
+							<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
+							<a href="mailto:info@gmail.com" class="body-slide__link">
+								info@gmail.com
+							</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="nav__row">
 			<div class="nav__logo">
@@ -26,7 +61,10 @@
 					</div>
 					<span class="burger__text">Menu</span>
 				</div>
-				<ul class="nav__list">
+				<ul data-da=".burger-menu__row, 1024, 0" class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link _home">Home</a>
+					</li>
 					<li class="nav__item">
 						<a href="#" class="nav__link">Projects</a>
 					</li>
@@ -57,7 +95,7 @@
 							</li>
 						</ul>
 					</div>
-					<a href="#" class="nav__send">Send Request</a>
+					<a data-da=".nav__list, 767, 8" href="#" class="nav__send">Send Request</a>
 				</div>
 			</div>
 		</div>
@@ -75,39 +113,18 @@
 						Discover more
 					</p>
 				</div>
-				<div class="body-slide__footer">
-					<div class="body-slide__socials">
-						<a href="#" class="body-slide__link">Fb</a>
-						<a href="#" class="body-slide__link">In</a>
-						<a href="#" class="body-slide__link">Be</a>
-					</div>
-					<div class="body-slide__city select">
-						<div class="select__header">
-							<img src="img/icons/location.svg" alt="location" class="select__icon-location">
-							<div class="select__current">
-								Berlin
-							</div>
-							<img src="img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
-						</div>
-						<ul class="select__body">
-							<li class="select__item">
-								Berlin
-							</li>
-							<li class="select__item">
-								Dnipro
-							</li>
-						</ul>
-					</div>
-					<div class="body-slide__contacts">
-						<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
-						<a href="mailto:info@gmail.com" class="body-slide__link">
-							info@gmail.com
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div class="swiper-slide slider__slide _slide-2">
+			<div class="slider__text">
+				<h3 class="slider__subtitle">Next Project</h3>
+				<h2 class="slider__title">
+					Perfect 
+					proportions
+				</h2>
+			</div>
+		</div>
+		<div class="swiper-slide slider__slide">
 			<div class="slider__text">
 				<h3 class="slider__subtitle">Next Project</h3>
 				<h2 class="slider__title">
@@ -129,8 +146,38 @@
 		</div>
 	</div>
 </section>
+
+			<div class="body-slide__footer _hero">
+				<div class="body-slide__socials">
+					<a href="#" class="body-slide__link">Fb</a>
+					<a href="#" class="body-slide__link">In</a>
+					<a href="#" class="body-slide__link">Be</a>
+				</div>
+				<div class="body-slide__city select">
+					<div class="select__header">
+						<img src="img/icons/location.svg" alt="location" class="select__icon-location">
+						<div class="select__current">
+							Berlin
+						</div>
+						<img src="img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
+					</div>
+					<ul class="select__body">
+						<li class="select__item">
+							Berlin
+						</li>
+						<li class="select__item">
+							Dnipro
+						</li>
+					</ul>
+				</div>
+				<div class="body-slide__contacts">
+					<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
+					<a href="mailto:info@gmail.com" class="body-slide__link">
+						info@gmail.com
+					</a>
+				</div>
+			</div>
 		</header>
-		
 		<section class="philosophy">
 			<div class="philosophy__container container">
 				<div class="philosophy__head">
@@ -155,15 +202,15 @@
 						</a>
 					</article>
 					<div class="philosophy__top-image">
-						<img src="img/philosophy_image-top.jpg" alt="Image Company">
+						<picture><source srcset="img/philosophy_image-top.webp" type="image/webp"><img src="img/philosophy_image-top.jpg" alt="Image Company"></picture>
 					</div>
 				</div>
 			</div>
 			<div class="philosophy__container container">
 				<div class="philosophy__footer">
 					<div class="philosophy__bottom-image">
-						<img src="img/philosophy__image-bot-2.jpg" alt="image room" class="image-1">
-						<img src="img/philosophy__image-bot.jpg" alt="image room" class="image-2">
+						<picture><source srcset="img/philosophy__image-bot-2.webp" type="image/webp"><img src="img/philosophy__image-bot-2.jpg" alt="image room" class="image-1"></picture>
+						<picture><source srcset="img/philosophy__image-bot.webp" type="image/webp"><img src="img/philosophy__image-bot.jpg" alt="image room" class="image-2"></picture>
 					</div>
 					<p class="philosophy__bottom-text">
 						We can also help you create harmony out of seemingly completely incompatible elements in the
@@ -191,7 +238,7 @@
 				</p>
 				<ul class="projects__list">
 					<li class="projects__item _item-1">
-						<img src="img/projects_1.jpg" alt="Image" class="projects__image">
+						<picture><source srcset="img/projects_1.webp" type="image/webp"><img src="img/projects_1.jpg" alt="Image" class="projects__image"></picture>
 						<div class="projects__item item-body">
 							<div class="item-body__head">
 								<span class="item-body__item">Lodz</span>
@@ -207,7 +254,7 @@
 						</div>
 					</li>
 					<li class="projects__item _item-2">
-						<img src="img/projects_2.jpg" alt="Image" class="projects__image">
+						<picture><source srcset="img/projects_2.webp" type="image/webp"><img src="img/projects_2.jpg" alt="Image" class="projects__image"></picture>
 						<div class="projects__item item-body">
 							<div class="item-body__head">
 								<span class="item-body__item">Lodz</span>
@@ -223,8 +270,8 @@
 						</div>
 					</li>
 					<li class="projects__item _item-3">
-						<img src="img/projects_5.jpg" alt="Image" class="projects__image _mobile">
-						<img src="img/projects_3.jpg" alt="Image" class="projects__image _pc">
+						<picture><source srcset="img/projects_5.webp" type="image/webp"><img src="img/projects_5.jpg" alt="Image" class="projects__image _mobile"></picture>
+						<picture><source srcset="img/projects_3.webp" type="image/webp"><img src="img/projects_3.jpg" alt="Image" class="projects__image _pc"></picture>
 						<div class="projects__item item-body">
 							<div class="item-body__head">
 								<span class="item-body__item">Lodz</span>
@@ -243,7 +290,7 @@
 						</div>
 					</li>
 					<li class="projects__item _item-4">
-						<img src="img/projects_4.jpg" alt="Image" class="projects__image">
+						<picture><source srcset="img/projects_4.webp" type="image/webp"><img src="img/projects_4.jpg" alt="Image" class="projects__image"></picture>
 						<div class="projects__item item-body">
 							<div class="item-body__head">
 								<span class="item-body__item">Lodz</span>
@@ -259,7 +306,7 @@
 						</div>
 					</li>
 					<li class="projects__item _item-4">
-						<img src="img/projects_4.jpg" alt="Image" class="projects__image">
+						<picture><source srcset="img/projects_4.webp" type="image/webp"><img src="img/projects_4.jpg" alt="Image" class="projects__image"></picture>
 						<div class="projects__item item-body">
 							<div class="item-body__head">
 								<span class="item-body__item">Lodz</span>
@@ -279,14 +326,14 @@
 							See more 60 projects
 						</p>
 						<div class="projects__item-img">
-							<img src="img/projects_4.jpg" alt="Image" class="projects__image">
+							<picture><source srcset="img/projects_4.webp" type="image/webp"><img src="img/projects_4.jpg" alt="Image" class="projects__image"></picture>
 						</div>
 					</li>
 				</ul>
 			</div>
 			<div class="container container_collage">
 				<div class="projects__collage collage">
-					<img src="img/main_colage.png" alt="Photo Collage">
+					<picture><source srcset="img/main_colage.webp" type="image/webp"><img src="img/main_colage.png" alt="Photo Collage"></picture>
 					<span class="block-title">
 						Make request
 					</span>
@@ -308,14 +355,14 @@
 				<p class="photos__text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere.
 				</p>
-				<img src="img/photos-1.jpg" alt="Photo" class="photos__image _image-1">
-				<img src="img/photos-2.jpg" alt="Photo" class="photos__image _image-2">
-				<img src="img/photos-3.jpg" alt="Photo" class="photos__image _image-3">
-				<img src="img/photos-4.jpg" alt="Photo" class="photos__image _image-4">
-				<img src="img/photos-5.jpg" alt="Photo" class="photos__image _image-5">
-				<img src="img/photos-6.jpg" alt="Photo" class="photos__image _image-6">
-				<img src="img/photos-7.jpg" alt="Photo" class="photos__image _image-7">
-				<img src="img/photos-8.jpg" alt="Photo" class="photos__image _image-8">
+				<picture><source srcset="img/photos-1.webp" type="image/webp"><img src="img/photos-1.jpg" alt="Photo" class="photos__image _image-1"></picture>
+				<picture><source srcset="img/photos-2.webp" type="image/webp"><img src="img/photos-2.jpg" alt="Photo" class="photos__image _image-2"></picture>
+				<picture><source srcset="img/photos-3.webp" type="image/webp"><img src="img/photos-3.jpg" alt="Photo" class="photos__image _image-3"></picture>
+				<picture><source srcset="img/photos-4.webp" type="image/webp"><img src="img/photos-4.jpg" alt="Photo" class="photos__image _image-4"></picture>
+				<picture><source srcset="img/photos-5.webp" type="image/webp"><img src="img/photos-5.jpg" alt="Photo" class="photos__image _image-5"></picture>
+				<picture><source srcset="img/photos-6.webp" type="image/webp"><img src="img/photos-6.jpg" alt="Photo" class="photos__image _image-6"></picture>
+				<picture><source srcset="img/photos-7.webp" type="image/webp"><img src="img/photos-7.jpg" alt="Photo" class="photos__image _image-7"></picture>
+				<picture><source srcset="img/photos-8.webp" type="image/webp"><img src="img/photos-8.jpg" alt="Photo" class="photos__image _image-8"></picture>
 			</div>
 		</section>
 
@@ -393,7 +440,7 @@
 
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20221113185415"></script>
 </body>
 
 </html>

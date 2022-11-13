@@ -1,19 +1,20 @@
 .nav {
 	width: 100%;
 	position: absolute;
-	z-index: 10;
 	&__row,
 	&__body,
 	&__buttons {
 		display: flex;
 		align-items: center;
+		z-index: 10;
 	}
 	&__row {
 		padding: 24px 0;
 		color: #fff;
+		position: relative;
 	}
 	&__logo {
-		margin: 0 10.75% 0 0;
+		margin: 0 7.12% 0 0;
 		font-size: 14px;
 		line-height: 17px;
 		letter-spacing: 0.3em;
@@ -34,6 +35,9 @@
 	&__list {
 		display: flex;
 		gap: 48px;
+		& ._home {
+			display: none;
+		}
 	}
 	&__link {
 		padding: 10px 0;
@@ -77,6 +81,7 @@
 		height: 28px;
 		display: flex;
 		align-items: center;
+		z-index: 10;
 		span,
 		span::before,
 		span::after {
@@ -110,29 +115,68 @@
 	}
 }
 
-
+.burger-menu {
+	display: none;
+	position: fixed;
+	z-index: 9;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(8, 0, 8, 0.98);
+	visibility: hidden;
+	z-index: -1;
+	transition: 0.3s;
+	&._active {
+		left: 0;
+		visibility: visible;
+		z-index: 9;
+	}
+	& .container {
+		padding: 0 56px;
+	}
+	& .select {
+		width: 118px;
+	}
+	& .body-slide__city {
+		margin: 0px 4.3% 0 0;
+	}
+	&__row {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		padding: 90px 0 40px;
+	}
+}
 @media (max-width: 1024px) {
 	.nav {
 		&__row {
 			padding: 25px 0;
 		}
+		&__logo {
+			margin: 0 10.62% 0 0;
+		}
 		&__list {
-			position: absolute;
-			top: 90%;
-			left: -100%;
-			width: 100%;
-			padding: 20px;
+			flex: 1 1 auto;
+			flex-direction: column;
 			justify-content: center;
-			backdrop-filter: blur(10px);
-			opacity: 0;
-			visibility: hidden;
-			z-index: -1;
-			transition: .2s;
-			&._active {
-				left: 0;
-				opacity: 1;
-				visibility: visible;
-				z-index: 10;
+			gap: 0px;
+			margin: 0px 0 61px 0;
+			padding: 0 0 0 155px;
+			& ._home {
+				display: block;
+			}
+		}
+		&__link {
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 39px;
+			color: rgba(255, 255, 255, 0.5);
+			padding: 16px 0 18px;
+			display: block;
+			letter-spacing: normal;
+			&:hpver {
+				color: #fff;
 			}
 		}
 		&__lang {
@@ -148,6 +192,19 @@
 		align-items: center;
 		gap: 24px;
 	}
+
+	.burger-menu {
+		display: block;
+		& .body-slide {
+			&__footer {
+				bottom: 40px;
+				left: 56px;
+			}
+			&__city {
+				margin: 0px 7.7% 0 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -155,16 +212,34 @@
 		&__logo {
 			margin: 0px 14% 0px 0;
 		}
+		&__list {
+			margin: 0 0 33px 0;
+			padding: 0 0 0 132px;
+		}
 	}
 
 	.burger {
 		margin: 4px 0 0 0;
 		gap: 21px;
 	}
+
+	.burger-menu {
+		& .body-slide {
+			&__footer {
+				left: 48px;
+			}
+			&__city {
+				margin: 0px 6.6% 0 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {
 	.nav {
+		& .body-slide__footer {
+			justify-content: space-between;
+		}
 		&__row {
 			padding: 14px 0;
 		}
@@ -175,20 +250,19 @@
 		&__list {
 			display: block;
 			text-align: center;
-			overflow: auto;
-		}
-		&__item {
-			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-			&:last-child {
-				border: 0;
-			}
+			padding: 0;
+			margin: 47px 0 0 0;
 		}
 		&__link {
 			display: block;
-			padding: 15px 0;
+			padding: 14px 0;
+			font-size: 26px;
+			line-height: 32px;
 		}
 		&__send {
-			display: none;
+			display: block;
+			max-width: 158px;
+			margin: 36px auto 0;
 		}
 		&__lang {
 			margin: 0 30px 0 0;
@@ -200,12 +274,31 @@
 			display: none;
 		}
 	}
+
+	.burger-menu {
+		& .body-slide__city .select__header {
+			padding: 5px 10px 4px 13px;
+			margin: 2px 0 0 0;
+		}
+		& .body-slide__footer {
+			width: 88.3%;
+		}
+	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
 	.nav {
 		&__lang {
 			margin: 0 33px 0 0;
+		}
+	}
+
+	.burger-menu {
+		& .container {
+			padding: 0 23px;
+		}
+		&__row {
+			padding: 90px 0 21px;
 		}
 	}
 }

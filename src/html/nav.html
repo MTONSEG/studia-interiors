@@ -1,4 +1,40 @@
 <nav class="header__nav nav">
+	<div class="burger-menu">
+		<div class="container">
+			<div class="burger-menu__row">
+					<div class="body-slide__footer">
+						<div class="body-slide__socials">
+							<a href="#" class="body-slide__link">Fb</a>
+							<a href="#" class="body-slide__link">In</a>
+							<a href="#" class="body-slide__link">Be</a>
+						</div>
+						<div class="body-slide__city select">
+							<div class="select__header">
+								<img src="@img/icons/location.svg" alt="location" class="select__icon-location">
+								<div class="select__current">
+									Berlin
+								</div>
+								<img src="@img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
+							</div>
+							<ul class="select__body">
+								<li class="select__item">
+									Berlin
+								</li>
+								<li class="select__item">
+									Dnipro
+								</li>
+							</ul>
+						</div>
+						<div class="body-slide__contacts">
+							<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
+							<a href="mailto:info@gmail.com" class="body-slide__link">
+								info@gmail.com
+							</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="nav__row">
 			<div class="nav__logo">
@@ -11,7 +47,10 @@
 					</div>
 					<span class="burger__text">Menu</span>
 				</div>
-				<ul class="nav__list">
+				<ul data-da=".burger-menu__row, 1024, 0" class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link _home">Home</a>
+					</li>
 					<li class="nav__item">
 						<a href="#" class="nav__link">Projects</a>
 					</li>
@@ -42,7 +81,7 @@
 							</li>
 						</ul>
 					</div>
-					<a href="#" class="nav__send">Send Request</a>
+					<a data-da=".nav__list, 767, 8" href="#" class="nav__send">Send Request</a>
 				</div>
 			</div>
 		</div>

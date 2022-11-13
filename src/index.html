@@ -4,12 +4,40 @@
 
 <body>
 	<div class="wrapper">
-
-		<header class="header">
+		<header class="header _fullscreen">
 			@@include('html/nav.html',{})
 			@@include('html/hero.html',{})
+			<div class="body-slide__footer _hero">
+				<div class="body-slide__socials">
+					<a href="#" class="body-slide__link">Fb</a>
+					<a href="#" class="body-slide__link">In</a>
+					<a href="#" class="body-slide__link">Be</a>
+				</div>
+				<div class="body-slide__city select">
+					<div class="select__header">
+						<img src="@img/icons/location.svg" alt="location" class="select__icon-location">
+						<div class="select__current">
+							Berlin
+						</div>
+						<img src="@img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
+					</div>
+					<ul class="select__body">
+						<li class="select__item">
+							Berlin
+						</li>
+						<li class="select__item">
+							Dnipro
+						</li>
+					</ul>
+				</div>
+				<div class="body-slide__contacts">
+					<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
+					<a href="mailto:info@gmail.com" class="body-slide__link">
+						info@gmail.com
+					</a>
+				</div>
+			</div>
 		</header>
-		
 		<section class="philosophy">
 			<div class="philosophy__container container">
 				<div class="philosophy__head">
