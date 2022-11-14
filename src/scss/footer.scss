@@ -41,6 +41,12 @@
 	}
 }
 
+.footer-black {
+	& .footer__logo span {
+		color: #080808;
+	}
+}
+
 @media (max-width: 1120px) {
 	.footer {
 		&__text {

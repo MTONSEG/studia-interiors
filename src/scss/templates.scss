@@ -13,13 +13,11 @@ body._lock {
 }
 
 .container {
-	max-width: 1422px;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 54px 0 54px;
-	&-body {
-		max-width: 1440px;
-		margin: 0 auto;
-		padding: 0 64px;
+	padding: 0 64px;
+	&_small {
+		padding: 0 197px;
 	}
 }
 
@@ -251,8 +249,9 @@ body._lock {
 
 @media (max-width: 1220px) {
 	.container {
-		&-body {
-			padding: 0 57px;
+		padding: 0 56px;
+		&_small {
+			padding: 0 159px;
 		}
 	}
 	.header {
@@ -271,10 +270,6 @@ body._lock {
 }
 
 @media (max-width: 1120px) {
-	.container {
-		padding: 0 56px 0 54px;
-	}
-
 	.contacts {
 		padding: 105px 0 32px;
 		&__title {
@@ -315,9 +310,9 @@ body._lock {
 
 @media (max-width: 991px) {
 	.container {
-		padding: 0 49px 0 48px;
-		&-body {
-			padding: 0 48px;
+		padding: 0 48px;
+		&_small {
+			padding: 0 124px;
 		}
 	}
 
@@ -374,7 +369,8 @@ body._lock {
 
 @media (max-width: 575px) {
 	.container {
-		&-body {
+		padding: 0 24px;
+		&_small {
 			padding: 0 24px;
 		}
 	}

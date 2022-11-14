@@ -1,0 +1,158 @@
+.body-news {
+	padding: 111px 0 0;
+	&__image {
+		margin-bottom: 96px;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.head-body {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 99px;
+	&__title {
+		max-width: 474px;
+		margin-bottom: 19px;
+	}
+	&__text {
+		font-weight: 300;
+		line-height: 24px;
+		max-width: 709px;
+	}
+}
+
+.social-news {
+	margin: 9px 2px 0 0;
+	&__title {
+		font-weight: 500;
+		line-height: 170.66%;
+		margin-bottom: 12px;
+	}
+	&__list {
+		display: flex;
+		gap: 7px;
+	}
+	&__link {
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.news-content {
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 56px;
+	&__title {
+		font-size: 16px;
+		line-height: 22px;
+		max-width: 405px;
+		margin-bottom: 14px;
+
+	}
+	&__text,
+	&__item {
+		color: rgba(8, 8, 8, .7);
+		span {
+			font-weight: 500;
+		}
+	}
+	&__text,
+	&__list {
+		margin-bottom: 43px;
+		max-width: 715px;
+	}
+	&__list {
+		margin-bottom: 38px;
+		&._elipse {
+			margin: 0 0 38px 16px;
+		}
+	}
+	&__item {
+		margin-bottom: 12px;
+		line-height: 170.66%;
+		&._elipse {
+			position: relative;
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: -16px;
+				top: 8px;
+				width: 6px;
+				height: 6px;
+				border: 1px solid #515151;
+				border-radius: 50px;
+				background: transparent;
+			}
+		}
+	}
+}
+
+.news-gallery {
+	margin-bottom: 96px;
+	&__image {
+		display: block;
+		width: 100%;
+	}
+	&__top {
+		margin-bottom: 8px;
+	}
+	&__bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+	}
+}
+
+
+@media (max-width: 1220px) {
+	.body-news {
+		padding: 54px 0 0;
+		&__image {
+			margin-bottom: 88px;
+		}
+	}
+
+	.social-mobile {
+		margin: 55px 0 0 0;
+	}
+
+	.head-body {
+		margin-bottom: 74px;
+		&__title {
+			max-width: 463px;
+		}
+		&__text {
+			max-width: 704px;
+		}
+	}
+
+	.news-content {
+		margin-bottom: 34px;
+		&__title {
+			margin-bottom: 22px;
+		}
+		&__text {
+			max-width: 704px;
+			margin-bottom: 22px;
+		}
+		&__list {
+			margin-bottom: 31px;
+		}
+	}
+
+	.news-gallery {
+		margin-bottom: 92px;
+		&__image {
+			height: 100%;
+			object-fit: cover;
+		}
+		&__top {
+			margin-bottom: 9px;
+		}
+	}
+}
