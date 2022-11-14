@@ -3303,6 +3303,7 @@ body._lock {
 .news-footer__btn:hover {
   transform: scale(1.2);
 }
+
 @media (max-width: 1220px) {
   .news {
     padding: 54px 0 129px;
@@ -3593,6 +3594,9 @@ body._lock {
   margin-bottom: 12px;
   line-height: 170.66%;
 }
+.news-content__item:last-child {
+  margin: 0;
+}
 .news-content__item._elipse {
   position: relative;
 }
@@ -3633,7 +3637,7 @@ body._lock {
     margin-bottom: 88px;
   }
   .social-mobile {
-    margin: 55px 0 0 0;
+    margin: 50px 0 0 0;
   }
   .head-body {
     margin-bottom: 74px;
@@ -3654,8 +3658,14 @@ body._lock {
     max-width: 704px;
     margin-bottom: 22px;
   }
+  .news-content__text._elipse {
+    margin-bottom: 33px;
+  }
   .news-content__list {
     margin-bottom: 31px;
+  }
+  .news-content__list._elipse {
+    margin: 0 0 31px 16px;
   }
   .news-gallery {
     margin-bottom: 92px;
@@ -3666,6 +3676,82 @@ body._lock {
   }
   .news-gallery__top {
     margin-bottom: 9px;
+  }
+}
+@media (max-width: 991px) {
+  .body-news {
+    padding: 49px 0 0;
+  }
+  .body-news__image {
+    margin-bottom: 72px;
+  }
+  .social-mobile {
+    margin: 42px 0 0 0;
+  }
+  .head-body {
+    margin-bottom: 65px;
+  }
+  .head-body__title {
+    margin-bottom: 11px;
+  }
+  .news-content {
+    margin-bottom: 44px;
+  }
+  .news-content__text {
+    margin-bottom: 32px;
+  }
+  .news-content__list._elipse {
+    margin: 0 0 32px 16px;
+  }
+  .news-content__item {
+    margin-bottom: 10.2px;
+  }
+  .news-gallery {
+    margin-bottom: 74px;
+  }
+  .news-gallery__top {
+    margin-bottom: 9px;
+  }
+}
+@media (max-width: 575px) {
+  .body-news {
+    padding: 46px 0 0;
+  }
+  .body-news__image {
+    height: 220px;
+    margin-bottom: 63px;
+  }
+  .body-news__image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .head-body {
+    margin-bottom: 56px;
+  }
+  .head-body__title {
+    line-height: 32px;
+    font-size: 26px;
+    margin-bottom: 13px;
+  }
+  .news-content {
+    margin-bottom: 23px;
+  }
+  .news-content__text {
+    line-height: 23.92px;
+    margin-bottom: 22px;
+  }
+  .news-gallery {
+    margin-bottom: 65px;
+  }
+  .news-gallery__top {
+    height: 220px;
+  }
+  .news-gallery__bottom {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+  .social-mobile {
+    margin: 33px 2px 0 0;
   }
 }
 .footer__row, .footer__right, .footer__logo {
