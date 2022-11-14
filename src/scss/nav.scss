@@ -103,10 +103,12 @@
 			span::before {
 				transform: rotate(45deg);
 				top: 0px;
+				background: #fff;
 			}
 			span::after {
 				transform: rotate(-45deg);
 				top: 0px;
+				background: #fff;
 			}
 		}
 	}
@@ -147,6 +149,15 @@
 		min-height: 100vh;
 		padding: 90px 0 40px;
 	}
+	& .nav__link {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media (max-width: 1220px) {
+	.nav {
+		
+	}
 }
 @media (max-width: 1024px) {
 	.nav {
@@ -171,7 +182,6 @@
 			font-weight: 700;
 			font-size: 32px;
 			line-height: 39px;
-			color: rgba(255, 255, 255, 0.5);
 			padding: 16px 0 18px;
 			display: block;
 			letter-spacing: normal;

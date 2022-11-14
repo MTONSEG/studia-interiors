@@ -16,6 +16,58 @@ body._lock {
 	max-width: 1422px;
 	margin: 0 auto;
 	padding: 0 54px 0 54px;
+	&-body {
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 0 64px;
+	}
+}
+
+.link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 0.06em;
+	color: #828282;
+	&:hover {
+		color: #080808;
+	}
+}
+
+.header {
+	&._fullscreen {
+		height: 100%;
+		min-height: 100vh;
+		position: relative;
+	}
+	&.header_black{
+		& .nav {
+			position: static;
+			display: block;
+			&__row {
+				color: #080808;
+			}
+			&__body,
+			&__lang,
+			&__link,
+			&__send {
+				color: #080808;
+			}
+			&__send {
+				border-color: #080808;
+			}
+			& .select__body {
+				background: rgba(8, 8, 8, 0.03);
+				border-color: rgba(8, 8, 8, 0.2);
+			}
+		}
+		& .burger {
+			&__icon span::before,
+			&__icon span::after {
+				background: #080808;
+			}
+		}
+	}
 }
 
 .title {
@@ -99,6 +151,15 @@ body._lock {
 	&::after {
 		width: 42.4px;
 		left: 109%;
+	}
+	&_black {
+		color: #080808;
+		max-width: 110px;
+		text-align: left;
+		&::after,
+		&::before {
+			background: rgba(49, 49, 49, 0.2);
+		}
 	}
 }
 
@@ -188,6 +249,27 @@ body._lock {
 	}
 }
 
+@media (max-width: 1220px) {
+	.container {
+		&-body {
+			padding: 0 57px;
+		}
+	}
+	.header {
+		&.header_black {
+			.nav {
+				&__row {
+					padding: 33px 0;
+				}
+			}
+		}
+	}
+	.title {
+		font-size: 32px;
+		line-height: 39px;
+	}
+}
+
 @media (max-width: 1120px) {
 	.container {
 		padding: 0 56px 0 54px;
@@ -234,6 +316,27 @@ body._lock {
 @media (max-width: 991px) {
 	.container {
 		padding: 0 49px 0 48px;
+		&-body {
+			padding: 0 48px;
+		}
+	}
+
+	.header {
+		&.header_black {
+			.nav {
+				&__row {
+					padding: 24px 0 24px 6px;
+				}
+				&__logo {
+					margin: 0px 11.2% 0px 0;
+				}
+				& .burger {
+					&__text {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 
 	.contacts {
@@ -270,6 +373,22 @@ body._lock {
 }
 
 @media (max-width: 575px) {
+	.container {
+		&-body {
+			padding: 0 24px;
+		}
+	}
+
+	.header {
+		&.header_black {
+			.nav {
+				&__row {
+					padding: 14px 0 24px 0px;
+				}
+			}
+		}
+	}
+
 	.contacts {
 		padding: 55px 0 68px;
 		&__row {

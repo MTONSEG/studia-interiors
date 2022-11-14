@@ -18,3 +18,28 @@ const swiper = new Swiper('.swiper', {
 	}
 });
 
+const newsSlider = new Swiper('.news-slider', {
+	pagination: {
+		el: ".news-slider__pagination",
+		clickable: true,
+		renderBullet: function (index, className) {
+			if (index < 9) {
+				return (
+					'<span class="' +
+					className +
+					'">' +
+					("0" + (index + 1)) +
+					"</span>"
+				);
+			} else {
+				return (
+					'<span class="' + className + '">' + (index + 1) + "</span>"
+				);
+			}
+		}
+	},
+	navigation: {
+		nextEl: ".news-slider__next",
+		prevEl: ".news-slider__prev",
+	}
+})
