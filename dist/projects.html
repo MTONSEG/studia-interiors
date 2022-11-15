@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{"title":"Our Projects"})
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<title>Our Projects</title>
+</head>
 
 <body>
 	<div class="wrapper">
 		<header class="header header_black">
-			@@include('html/nav.html',{})
+			<nav class="header__nav nav">
+	<div class="burger-menu">
+		<div class="container">
+			<div class="burger-menu__row">
+					<div class="body-slide__footer">
+						<div class="body-slide__socials">
+							<a href="#" class="body-slide__link">Fb</a>
+							<a href="#" class="body-slide__link">In</a>
+							<a href="#" class="body-slide__link">Be</a>
+						</div>
+						<div class="body-slide__city select">
+							<div class="select__header">
+								<img src="img/icons/location.svg" alt="location" class="select__icon-location">
+								<div class="select__current">
+									Berlin
+								</div>
+								<img src="img/icons/arrow-down.svg" alt="select" class="select__icon-arrow">
+							</div>
+							<ul class="select__body">
+								<li class="select__item">
+									Berlin
+								</li>
+								<li class="select__item">
+									Dnipro
+								</li>
+							</ul>
+						</div>
+						<div class="body-slide__contacts">
+							<a href="tel:380983527547" class="body-slide__link">+380983527547</a>
+							<a href="mailto:info@gmail.com" class="body-slide__link">
+								info@gmail.com
+							</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="nav__row">
+			<div class="nav__logo">
+				logo
+			</div>
+			<div class="nav__body">
+				<div class="nav__burger burger">
+					<div class="burger__icon">
+						<span></span>
+					</div>
+					<span class="burger__text">Menu</span>
+				</div>
+				<ul data-da=".burger-menu__row, 1024, 0" class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link _home">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Projects</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">About us</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Blog</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Contacts</a>
+					</li>
+				</ul>
+
+				<div class="nav__buttons">
+					<div class="nav__lang select">
+						<div class="select__header">
+							<div class="select__current">
+								En
+							</div>
+						</div>
+						<ul class="select__body">
+							<li class="select__item">
+								En
+							</li>
+							<li class="select__item">
+								UA
+							</li>
+						</ul>
+					</div>
+					<a data-da=".nav__list, 767, 8" href="#" class="nav__send">Send Request</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
 		</header>
 		<section class="our-projects">
 			<div class="container container_small">
@@ -35,7 +130,7 @@
 								<div class="select__current link">
 									Apartments
 								</div>
-								<img src="@img/icons/arr-down_black.svg" alt="select" class="select__icon-arrow">
+								<img src="img/icons/arr-down_black.svg" alt="select" class="select__icon-arrow">
 							</div>
 							<ul class="select__body">
 								<li class="select__item">
@@ -150,7 +245,7 @@
 					<div class="block-title block-title_white">
 						make request
 					</div>
-					<img src="@img/main_colage.png" alt="photo collage" class="collages__image">
+					<img src="img/main_colage.png" alt="photo collage" class="collages__image">
 					<h2 class="collages__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
 					<div class="collages__body">
 						<p class="collages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
@@ -161,7 +256,24 @@
 		</section>
 
 		<footer class="footer-black">
-			@@include('./html/footer.html',{})
+			<div class="footer">
+	<div class="container">
+		<div class="footer__row">
+			<p class="footer__copy">
+				&copy; Copyright 2018. All rights reserved
+			</p>
+			<div class="footer__right">
+				<p class="footer__text">
+					Made with love in
+				</p>
+				<div class="footer__logo">
+					<span>The First</span>
+					<span>The Last.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 		</footer>
 	</div>
 

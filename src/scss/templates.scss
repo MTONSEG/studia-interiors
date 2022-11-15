@@ -186,6 +186,12 @@ body._lock {
 		top: 50%;
 		background: rgba(255, 255, 255, 0.04);
 	}
+	&_white {
+		color: rgba(130, 130, 130, 0.35);
+		&::before {
+			background: rgba(196, 196, 196, 0.2);
+		}
+	}
 }
 
 .contacts {

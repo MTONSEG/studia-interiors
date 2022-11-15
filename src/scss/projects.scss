@@ -1,0 +1,383 @@
+.our-projects {
+	padding: 111px 0 124px;
+	&__head {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__head-body {
+		max-width: 448px;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		margin: -4px 0 35px 0;
+	}
+}
+
+.gallery {
+	margin-bottom: 102px;
+	& .picture-1 {
+		background: url('@img/gallery_img-1.jpg') 0 0/cover no-repeat;
+	}
+	& .picture-2 {
+		background: url('@img/gallery_img-2.jpg') 0 0/cover no-repeat;
+	}
+	& .picture-3 {
+		background: url('@img/gallery_img-3.jpg') 0 0/cover no-repeat;
+	}
+	& .picture-4 {
+		background: url('@img/gallery_img-4.jpg') 0 0/cover no-repeat;
+	}
+	& .picture-5 {
+		background: url('@img/gallery_img-5.jpg') 0 0/cover no-repeat;
+	}
+	& .picture-6 {
+		background: url('@img/gallery_img-6.jpg') 0 0/cover no-repeat;
+	}
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+		margin-bottom: 9px;
+		&_big {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__image {
+		position: relative;
+		overflow: hidden;
+		padding: 0 0 100% 0;
+		&_big {
+			padding: 0px 0 49.77% 0;
+		}
+	}
+
+	&__body {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 29px 31px;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			background: rgba(0, 0, 0, 0.1);
+		}
+	}
+	&__top {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 17px;
+		color: #fff;
+		display: flex;
+		gap: 24px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 28px;
+		color: #fff;
+		display: block;
+	}
+	&__more {
+		display: none;
+	}
+}
+
+.collages {
+	padding: 65px 0;
+	margin: 0 0 92px 0;
+	&__row {
+		position: relative;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 51px;
+		max-width: 424px;
+		margin-bottom: 25px;
+		position: relative;
+		z-index: 1;
+	}
+	&__body {
+		max-width: 339px;
+		margin: 0 0 0 auto;
+	}
+	&__text {
+		font-weight: 300;
+		line-height: 24px;
+		margin-bottom: 45px;
+		position: relative;
+		z-index: 1;
+	}
+	&__button {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 13px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		color: #080808;
+		background: #fff;
+		padding: 17px 48px;
+		display: inline-block;
+		border: 1px solid rgb(8, 8, 8, 0.32);
+	}
+	&__image {
+		position: absolute;
+		top: 45.3%;
+		left: 48.6%;
+		transform: translate(-50%, -50%);
+	}
+	& .block-title {
+		top: 40px;
+		left: -168px;
+	}
+}
+
+@media (max-width: 1220px) {
+	.our-projects {
+		padding: 54px 0 102px;
+		&__head {
+			display: block;
+		}
+		&__title {
+			margin-bottom: 14px;
+		}
+		&__text {
+			margin: 0px 0 30px 0;
+		}
+		& .news__list {
+			margin: 0 0 0 0px;
+			gap: 35px;
+		}
+		& .news__link {
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 19px;
+			letter-spacing: normal;
+		}
+	}
+
+	.gallery {
+		margin-bottom: 114px;
+		&__row {
+			gap: 6px;
+			margin-bottom: 6px;
+			&_big {
+				& .gallery__bottom {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-end;
+					padding: 0 115px 0 0;
+					margin: 0 0 -1px 0;
+				}
+				& .gallery__title {
+					max-width: 220px;
+					margin: 0 0 -7px 0;
+				}
+			}
+		}
+		&__body {
+			padding: 29px 33px 35px 31px;
+		}
+		&__top {
+			font-size: 11px;
+			line-height: 19px;
+			gap: 26px;
+		}
+		&__title {
+			font-size: 20px;
+			line-height: 126%;
+			margin-bottom: 26px;
+		}
+		&__more {
+			display: block;
+			max-width: 110px;
+			color: #fff;
+			margin: 0px 0 0 13px;
+			&::before {
+				top: 6px;
+				width: 7px;
+			}
+			&::after {
+				top: 6px;
+				width: 56px;
+			}
+		}
+	}
+
+	.collages {
+		padding: 0;
+		margin: 0 0 104px 0;
+		&__image {
+			display: none;
+		}
+		&__row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&__body {
+			margin: 0;
+			max-width: 448px;
+		}
+		&__title {
+			font-size: 32px;
+			line-height: 142.4%;
+			max-width: 365px;
+			margin-bottom: 25px;
+		}
+		&__text {
+			margin-bottom: 66px;
+		}
+		&__button {
+			padding: 14px 48px;
+		}
+		& .block-title {
+			top: 40px;
+			left: -141px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.our-projects {
+		padding: 48px 0 93px;
+		&__head-body {
+			max-width: 496px;
+		}
+		&__title {
+			margin-bottom: 12px;
+		}
+		&__text {
+			margin: 0px 0 32px 0;
+		}
+	}
+
+	.gallery {
+		margin-bottom: 95px;
+		& .picture-1 {
+			background: url('@img/gallery_img-1_mob.jpg') 0 0/cover no-repeat;
+		}
+		& .picture-2 {
+			background: url('@img/gallery_img-2_mob.jpg') 0 0/cover no-repeat;
+		}
+		& .picture-3 {
+			background: url('@img/gallery_img-3_mob.jpg') 0 0/cover no-repeat;
+		}
+		& .picture-6 {
+			background: url('@img/gallery_img-6_mob.jpg') 0 0/cover no-repeat;
+		}
+		&__row {
+			grid-template-columns: 1fr;
+			&_big {
+				& .gallery__bottom {
+					display: block;
+				}
+				& .gallery__title {
+					max-width: 220px;
+					margin: 0 0 26px 0;
+				}
+			}
+		}
+		&__top {
+			gap: 19px;
+		}
+		&__image {
+			padding: 0 0 100% 0;
+		}
+		&__body {
+			padding: 24px 32px 38px 31px;
+		}
+	}
+
+	.collages {
+		margin: 0 0 84px 0;
+		& .block-title {
+			top: 40px;
+			left: -114px;
+		}
+		&__title {
+			max-width: 376px;
+			margin-bottom: 24px;
+		}
+		&__text {
+			margin-bottom: 52px;
+		}
+		&__button {
+			padding: 14px 48px 13px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.our-projects {
+		padding: 46px 0 64px;
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+			margin-bottom: 13px;			
+		}
+		&__text {
+			margin: 0px 0 27px 0;
+		}
+	}
+
+	.gallery {
+		margin-bottom: 91px;
+		&__row {
+			&_big {
+				& .gallery__title {
+					margin: 0 0 11px 0;
+				}
+			}
+		}
+		&__body {
+			padding: 22px 24px 24px 24px;
+		}
+		&__title {
+			margin-bottom: 11px;
+		}
+		&__top {
+			gap: 18px;
+			font-size: 11.1px;
+		}
+		&__more {
+			margin: 0px 0 0 12px;
+			&::before,
+			&::after {
+				top: 5px;
+			}
+			&::before {
+				width: 8px;
+				left: -12px;
+			}
+			&::after {
+				width: 55px;
+			}
+		}
+	}
+
+	.collages {
+		margin: 0 0 73px 0;
+		&__row {
+			text-align: left;
+			align-items: flex-start;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+			max-width: 297px;
+			margin-bottom: 10px;
+		}
+		&__text {
+			margin-bottom: 41px;
+		}
+	}
+}
