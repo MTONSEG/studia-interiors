@@ -51,7 +51,6 @@
 		line-height: 22px;
 		max-width: 405px;
 		margin-bottom: 14px;
-
 	}
 	&__text,
 	&__item {
@@ -111,6 +110,62 @@
 	}
 }
 
+.border-bottom {
+	border-bottom: 1px solid  rgb(130, 130, 130, 0.16);
+	margin: 100px 0 84px 0;
+}
+
+.our-news {
+	margin: 0 0 111px 0;
+	& .container {
+		padding: 0 0 0 64px;
+		overflow: hidden;
+	}
+	& .block-title {
+		left: -10px;
+		top: 15px;
+		color: rgba(130, 130, 130, 0.35);
+		&::before {
+			background: rgba(196, 196, 196, 0.2);
+		}
+	}
+	&__row {
+		padding: 0 0 0 138px;
+		position: relative;
+	}
+	&__title {
+		margin-bottom: 73px;
+	}
+	&__slide {
+		width: 316px;
+		position: relative;
+	}
+
+	&__image {
+		position: relative;
+		margin-bottom: 23px;
+		padding: 0 0 123% 0;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__item-title {
+		line-height: 19px;
+		color: #3A3E4B;
+		margin-bottom: 13px;
+	}
+	&__date {
+		color: #828282;
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 17px;		
+	}
+}
 
 @media (max-width: 1220px) {
 	.body-news {
@@ -164,6 +219,33 @@
 			margin-bottom: 9px;
 		}
 	}
+
+	.border-bottom {
+		margin: 88px 0 0 0;
+	}
+
+	.our-news {
+		margin: 0px 0 97px 0;
+		&__row {
+			padding: 91px 0 0 95px;
+		}
+		& .block-title {
+			left: -18px;
+			top: 99px;
+		}
+		&__title {
+			margin-bottom: 55px;
+		}
+		&__slide {
+			width: 293px;
+		}
+		&__image {
+			margin-bottom: 26px;
+		}
+		&__title {
+			
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -202,6 +284,34 @@
 		margin-bottom: 74px;
 		&__top {
 			margin-bottom: 9px;
+		}
+	}
+
+	.border-bottom {
+		margin: 71px 0 0 0;
+	}
+
+	.our-news {
+		margin: 0px 0 78px 0;
+		&__row {
+			padding: 60px 0 0 60px;
+		}
+		& .block-title {
+			left: -26px;
+			top: 70px;
+		}
+		&__title {
+			margin-bottom: 48px;
+		}
+		&__slide {
+			width: 366px;
+		}
+		&__image {
+			margin-bottom: 25px;
+		}
+		&__item-title {
+			max-width: 247px;
+			margin-bottom: 12px;
 		}
 	}
 }
@@ -251,5 +361,30 @@
 
 	.social-mobile {
 		margin: 33px 2px 0 0;
+	}
+
+	.border-bottom {
+		margin: 63px 0 0 0;
+	}
+
+	.our-news {
+		margin: 0px 0 51px 0;
+		& .container {
+			padding: 0 0 0 24px;
+		}
+		&__row {
+			padding: 57px 0 0 0;
+		}
+		& .block-title {
+			display: none;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+			margin-bottom: 40px;
+		}
+		&__slide {
+			width: 290px;
+		}
 	}
 }

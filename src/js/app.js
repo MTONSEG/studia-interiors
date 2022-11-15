@@ -43,3 +43,24 @@ const newsSlider = new Swiper('.news-slider', {
 		prevEl: ".news-slider__prev",
 	}
 })
+
+const ourNewsSlider = new Swiper('.our-news__slider', {
+	slidesPerView: "auto",
+	spaceBetween: 26,
+	freeMode: true,
+	allowTouchMove: true,
+	mousewheel: {
+		invert: true,
+	},
+	breakpoints: {
+		576: {
+			spaceBetween: 20
+		},
+		992: {
+			spaceBetween: 40,
+		},
+		1221: {
+			spaceBetween: 48
+		}
+	}
+})
