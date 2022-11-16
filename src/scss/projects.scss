@@ -52,7 +52,6 @@
 			padding: 0px 0 49.77% 0;
 		}
 	}
-
 	&__body {
 		position: absolute;
 		left: 0;
@@ -86,6 +85,34 @@
 	}
 	&__more {
 		display: none;
+	}
+}
+
+.projects-more {
+	background: #fff;
+	color: #080808;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 112px 0 0 0;
+	&__text {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 24px;
+	}
+	&__image {
+		width: 243px;
+		height: 323px;
+		margin: 0 auto;
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
 	}
 }
 
@@ -136,6 +163,19 @@
 	& .block-title {
 		top: 40px;
 		left: -168px;
+	}
+
+	&_black {
+		background: #080808;
+		color: #fff;
+	}
+	&._main {
+		padding: 65px 0 177px;
+		margin: 0;
+		& .block-title {
+			left: -173px;
+			top: 53px;
+		}
 	}
 }
 
@@ -211,6 +251,18 @@
 		}
 	}
 
+	.projects-more {
+		padding: 64px 0 0 0;
+		&__text {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		&__image {
+			width: 168px;
+			height: 223px;
+		}
+	}
+
 	.collages {
 		padding: 0;
 		margin: 0 0 104px 0;
@@ -242,6 +294,13 @@
 		& .block-title {
 			top: 40px;
 			left: -141px;
+		}
+		&._main {
+			padding: 65px 0 142px;
+			& .block-title {
+				left: -142px;
+				top: 41px;		  
+			}
 		}
 	}
 }
@@ -297,6 +356,14 @@
 		}
 	}
 
+	.projects-more {
+		padding: 145px 0 0 0;
+		&__image {
+			height: 331px;
+			width: 251px;
+		}
+	}
+
 	.collages {
 		margin: 0 0 84px 0;
 		& .block-title {
@@ -312,6 +379,13 @@
 		}
 		&__button {
 			padding: 14px 48px 13px;
+		}
+		&._main {
+			margin: -1px 0 0 0;
+			padding: 49px 0 126px;
+			& .collages__title {
+				max-width: 360px;
+			}
 		}
 	}
 }
@@ -364,6 +438,18 @@
 		}
 	}
 
+	.projects-more {
+		padding: 62px 0 0 0;
+		&__title {
+			font-size: 20px;
+			line-height: 126.78%;
+		}
+		&__image {
+			height: 161px;
+			width: 121px;	
+		}
+	}
+
 	.collages {
 		margin: 0 0 73px 0;
 		&__row {
@@ -378,6 +464,19 @@
 		}
 		&__text {
 			margin-bottom: 41px;
+		}
+		&._main {
+			padding: 49px 0 96px;
+			& .collages__title {
+				max-width: 297px;
+				margin-bottom: 20px;
+			}
+			& .collages__text {
+				margin-bottom: 40px;
+			}
+			& .collages__button {
+				padding: 14px 50px 13px;
+			}
 		}
 	}
 }
