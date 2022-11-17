@@ -1279,11 +1279,15 @@ body._lock {
 .wrapper {
   max-width: 2560px;
   margin: 0 auto;
-  height: 100%;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+}
+.wrapper_main {
+  height: 100%;
 }
 
 .container {
@@ -4044,6 +4048,303 @@ body._lock {
   }
   .collages._main .collages__button {
     padding: 14px 50px 13px;
+  }
+}
+.one-project {
+  background: url("../img/one-poject_bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.one-project__body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 130px 197px 27px;
+}
+.one-project__title {
+  color: #fff;
+  margin-bottom: 21px;
+}
+.one-project__text {
+  line-height: 170.66%;
+  max-width: 462px;
+  margin-bottom: 68px;
+}
+.one-project__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.one-project__item {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+}
+.one-project__item img {
+  margin: 0 14px 0 0;
+}
+.one-project__share {
+  padding: 38px 43px;
+  display: flex;
+  align-items: center;
+}
+.one-project__socials {
+  margin: 0 0 0 111px;
+  display: flex;
+  gap: 7px;
+}
+
+.project-article {
+  padding: 140px 0;
+}
+.project-article__title {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 14px;
+  max-width: 419px;
+}
+.project-article__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(8, 8, 8, 0.7);
+  margin-bottom: 42px;
+  max-width: 715px;
+}
+.project-article__more {
+  margin: 0 0 0 17px;
+}
+
+.gallery-projects .picture-1 {
+  background: url("../img/our-projects-1.jpg") 0 0/100% 100% no-repeat;
+}
+.gallery-projects .picture-2 {
+  background: url("../img/our-projects-2.jpg") 0 0/100% 100% no-repeat;
+}
+.gallery-projects .picture-3 {
+  background: url("../img/our-projects-3.jpg") 0 0/100% 100% no-repeat;
+}
+.gallery-projects .picture-4 {
+  background: url("../img/our-projects-4.jpg") 0 0/100% 100% no-repeat;
+}
+.gallery-projects .collages__button {
+  display: block;
+  margin: 80px auto 37px;
+  max-width: 204px;
+  padding: 17px 40px;
+}
+.gallery-projects .gallery__row {
+  margin-bottom: 8px;
+}
+.gallery-projects .gallery__image {
+  padding: 0 0 119.1% 0;
+}
+.gallery-projects .gallery__image_big {
+  padding: 0 0 49.7% 0;
+}
+
+.footer-project .collages {
+  padding: 179px 0 177px;
+}
+.footer-project .collages__title {
+  margin-bottom: 23px;
+}
+.footer-project__white-block {
+  background: #FAFAFA;
+  height: 208px;
+  margin: -255px 0 0 0;
+}
+
+.next-project {
+  background: #080808;
+  text-align: center;
+  margin: -1px 0 0 -1px;
+  overflow: hidden;
+}
+.next-project__subtitle {
+  font-size: 8px;
+  line-height: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #828282;
+  margin-bottom: 17px;
+}
+.next-project__title {
+  color: #fff;
+  margin: 0 0 127px 0;
+}
+.next-project__image {
+  position: relative;
+  z-index: 2;
+}
+.next-project__image img {
+  width: 100%;
+}
+
+@media (max-width: 1220px) {
+  .one-project {
+    background: url("../img/one-poject_bg-1024.jpg") center/cover no-repeat;
+  }
+  .one-project__body {
+    padding: 109px 158px 18px;
+  }
+  .one-project__title {
+    max-width: 305px;
+    margin-bottom: 20px;
+  }
+  .one-project__text {
+    max-width: 464px;
+    margin-bottom: 51px;
+  }
+  .one-project__share {
+    padding: 32px 56px;
+  }
+  .one-project__socials {
+    margin: 0 0 0 60px;
+  }
+  .project-article {
+    padding: 123px 0;
+  }
+  .project-article__text {
+    max-width: 602px;
+  }
+  .gallery-projects .collages__button {
+    margin: 63px auto 11px;
+    padding: 16px 40px;
+  }
+  .gallery-projects .gallery__image {
+    padding: 0 0 120.4% 0;
+  }
+  .gallery-projects .gallery__image_big {
+    padding: 0 0 49.8% 0;
+  }
+  .gallery-projects .gallery__row {
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+  .footer-project .collages {
+    padding: 142px 0 139px;
+  }
+  .footer-project__white-block {
+    background: #080808;
+  }
+  .next-project__subtitle {
+    margin-bottom: 14px;
+  }
+  .next-project__title {
+    margin: 0 0 96px 0;
+  }
+}
+@media (max-width: 991px) {
+  .one-project__body {
+    padding: 91px 125px 0px;
+  }
+  .one-project__text {
+    margin-bottom: 35px;
+  }
+  .one-project__share {
+    padding: 33px 48px;
+  }
+  .one-project__list {
+    gap: 31px;
+  }
+  .one-project__socials {
+    margin: 0 0 0 33px;
+  }
+  .project-article {
+    padding: 103px 0 103px;
+  }
+  .project-article__title {
+    margin-bottom: 21px;
+  }
+  .gallery-projects .gallery__row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallery-projects .gallery__row_big {
+    grid-template-columns: 1fr;
+  }
+  .gallery-projects .gallery__image {
+    padding: 0 0 120.74% 0;
+  }
+  .gallery-projects .gallery__image_big {
+    padding: 0 0 49.8% 0;
+  }
+  .gallery-projects .collages__button {
+    margin: 54px auto 11px;
+  }
+  .next-project__title {
+    margin: 0px 0 71px 0;
+  }
+  .footer-project .collages {
+    padding: 123px 0 120px;
+  }
+}
+@media (max-width: 575px) {
+  .one-project__body {
+    padding: 107px 21px 32px;
+    justify-content: space-between;
+    max-height: 500px;
+  }
+  .one-project__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 14px;
+  }
+  .one-project__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .one-project__text {
+    margin-bottom: 36px;
+    max-width: 325px;
+  }
+  .one-project__share {
+    padding: 25px 23px;
+  }
+  .one-project__socials {
+    margin: 0 0 0 17px;
+  }
+  .project-article {
+    padding: 79px 0 79px;
+  }
+  .gallery-projects {
+    margin-bottom: 80px;
+  }
+  .gallery-projects .gallery__row {
+    grid-template-columns: 1fr;
+  }
+  .gallery-projects .gallery__image {
+    padding: 0 0 120% 0;
+  }
+  .gallery-projects .gallery__image_big {
+    padding: 0 0 49.8% 0;
+  }
+  .gallery-projects .collages__button {
+    padding: 14px 20px;
+    max-width: 183px;
+    margin: 48px auto 0;
+  }
+  .footer-project .collages {
+    padding: 96px 0 95px;
+  }
+  .footer-project__white-block {
+    margin: -209px 0 0 0;
+  }
+  .next-project__subtitle {
+    margin-bottom: 7px;
+  }
+  .next-project__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px 0 49px 0;
   }
 }
 .footer__row, .footer__right, .footer__logo {
