@@ -64,3 +64,16 @@ const ourNewsSlider = new Swiper('.our-news__slider', {
 		}
 	}
 })
+
+const aboutSlider = new Swiper('.about-slider__slider', {
+	slidesPerView: "auto",
+	pagination: {
+		el: ".about-slider__pagination",
+		type: "progressbar",
+	},
+	navigation: {
+		nextEl: ".about-slider__next",
+		prevEl: ".about-slider__prev",
+	},
+	spaceBetween: 12
+})

@@ -42,6 +42,9 @@
 }
 
 .footer-black {
+	&._about {
+		background: #ECECEC;
+	}
 	& .footer__logo span {
 		color: #080808;
 	}

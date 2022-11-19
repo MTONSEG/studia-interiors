@@ -146,6 +146,8 @@
 	background: url('@img/news-footer_bg.jpg') 0 0/100% 100% no-repeat;
 	&__container {
 		padding: 138px 197px 117px 199px;
+		max-width: 1440px;
+		margin: 0 auto;
 	}
 	&__title,
 	&__text,

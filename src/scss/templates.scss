@@ -10,9 +10,11 @@ body._lock {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	overflow: hidden;
 	&_main {
 		height: 100%;
+	}
+	&_overflow {
+		overflow: hidden;
 	}
 }
 
@@ -266,15 +268,15 @@ body._lock {
 			padding: 0 159px;
 		}
 	}
-	.header {
-		&.header_black {
-			.nav {
-				&__row {
-					padding: 33px 0;
-				}
-			}
-		}
-	}
+	// .header {
+	// 	&.header_black {
+	// 		.nav {
+	// 			&__row {
+	// 				padding: 33px 0;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.title {
 		font-size: 32px;
