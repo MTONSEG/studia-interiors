@@ -410,7 +410,100 @@
 	</div>
 </div>
 		</footer>
+		<div class="popup">
+	<div class="container container_small">
+		<form action="#" class="popup__body">
+			<div class="popup__top top-popup">
+				<h2 class="top-popup__title">
+					Calculate the cost of work
+				</h2>
+				<div class="top-popup__form">
+					<input type="text" name="Name" class="top-popup__input" tabindex="1" placeholder="Name">
+					<input type="text" name="Last Name" class="top-popup__input" tabindex="2" placeholder="Last name">
+					<input type="tel" name="Phone" class="top-popup__input" tabindex="3" placeholder="Phone">
+					<input type="text" name="City" class="top-popup__input" tabindex="4" placeholder="Your city">
+					<input type="email" name="Email" class="top-popup__input" tabindex="5" placeholder="Email">
+					<div class="top-popup__select select">
+						<div class="select__header" tabindex="6">
+							<div class="select__current">
+								Property type
+							</div>
+							<img src="img/icons/popup-arr.svg" alt="select" class="select__ic-popup">
+						</div>
+						<ul class="select__body">
+							<li class="select__item">
+								Loft
+							</li>
+							<li class="select__item">
+								Modern
+							</li>
+							<li class="select__item">
+								Hi-Tech
+							</li>
+						</ul>
+					</div>
+				</div>
+				<textarea type="text" name="Comment" name="Comment" class="top-popup__textarea" cols="1" tabindex="7"
+					minlength="15" maxlength="99999" placeholder="Your comment" required></textarea>
+			</div>
+			<div class="popup__bottom bottom-popup">
+				<h4 class="bottom-popup__title">
+					Area (m2)
+				</h4>
+				<div class="bottom-popup__range">
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="to 50">
+						<p class="custom-radio__text">to 50</p>
+						<span class="custom-radio__radio"></span>
+					</label>
 
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="50-150" checked>
+						<p class="custom-radio__text">50-150</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="150-250">
+						<p class="custom-radio__text">150-250</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="250-400">
+						<p class="custom-radio__text">250-400</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="400-600">
+						<p class="custom-radio__text">400-600</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="600-800">
+						<p class="custom-radio__text">600-800</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="800-1000">
+						<p class="custom-radio__text">800-1000</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="1000+">
+						<p class="custom-radio__text">1000+</p>
+						<span class="custom-radio__radio"></span>
+					</label>
+
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 	</div>
 
 	<script src="js/app.min.js"></script>
