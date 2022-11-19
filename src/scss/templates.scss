@@ -259,8 +259,17 @@ body._lock {
 			gap: 17px;
 		}
 	}
+	&._page {
+		padding: 182px 0 27px;
+		& .contacts__row {
+			margin: 0 0 92px 0;
+		}
+	}
 }
 
+
+@media (max-width: 1380px) {
+}
 @media (max-width: 1220px) {
 	.container {
 		padding: 0 56px;
@@ -268,15 +277,6 @@ body._lock {
 			padding: 0 159px;
 		}
 	}
-	// .header {
-	// 	&.header_black {
-	// 		.nav {
-	// 			&__row {
-	// 				padding: 33px 0;
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	.title {
 		font-size: 32px;

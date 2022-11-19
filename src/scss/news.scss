@@ -23,12 +23,10 @@
 		padding: 2px 0;
 		display: block;
 	}
-
 	&__select {
 		display: none;
 	}
 }
-
 .news-slider {
 	margin: 0 0 89px;
 	&__nav {
@@ -405,7 +403,7 @@
 			height: 218px;
 			img {
 				height: 100%;
-				objective-fit: cover;
+				object-fit: cover;
 				&:first-child {
 					display: none;
 				}

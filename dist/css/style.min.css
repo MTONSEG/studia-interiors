@@ -1521,6 +1521,12 @@ body._lock {
   display: flex;
   gap: 17px;
 }
+.contacts._page {
+  padding: 182px 0 27px;
+}
+.contacts._page .contacts__row {
+  margin: 0 0 92px 0;
+}
 
 @media (max-width: 1220px) {
   .container {
@@ -3196,7 +3202,7 @@ body._lock {
   }
   .news-slide__right img {
     height: 100%;
-    objective-fit: cover;
+    object-fit: cover;
   }
   .news-slide__right img:first-child {
     display: none;
