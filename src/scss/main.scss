@@ -291,6 +291,73 @@
 	}
 }
 
+.contacts {
+	background: url('@img/constacs_bg.jpg') center/cover no-repeat;
+	padding: 119px 0 27px;
+	position: relative;
+	& .container_small {
+		padding: 0 194px;
+	}
+	&__row {
+		color: #fff;
+		position: relative;
+		margin: 0 0 96px 0;
+	}
+	& .block-title {
+		top: 23px;
+		left: -25px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 44px;
+		margin: 0 0 12px 0;
+		&._mobile {
+			display: none;
+		}
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		max-width: 390px;
+		margin: 0 0 64px 0;
+	}
+	&__list {
+		margin: 0 0 65px 0;
+		display: flex;
+		gap: 126px;
+	}
+	&__city-title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 15px 0;
+	}
+	&__addr,
+	&__number {
+		font-weight: 300;
+		font-size: 11px;
+		line-height: 21px;
+		letter-spacing: 0.06em;
+		color: #FAFAFA;
+	}
+	&__social {
+		margin: 2px 0 0 19.1%;
+		&-list {
+			padding: 25px 0 0 0;
+			display: flex;
+			gap: 17px;
+		}
+	}
+	&._page {
+		padding: 182px 0 27px;
+		& .contacts__row {
+			margin: 0 0 92px 0;
+		}
+	}
+}
+
 @media (min-width: 1441px){
 	.body-slide {
 		max-width: 1220px;
@@ -468,6 +535,44 @@
 			}
 		}
 	}
+
+	.contacts {
+		padding: 105px 0 32px;
+		& .container_small {
+			padding: 0 159px;
+		}
+		&__title {
+			font-size: 32px;
+			line-height: 39px;
+			&._pc {
+				display: none;
+			}
+			&._mobile {
+				display: block;
+			}
+		}
+		&__text {
+			margin: 0 0 57px 0;
+		}
+		&__row {
+			margin: 0 0 90px 0;
+		}
+		&__list {
+			gap: 64px;
+			margin: 0 0 55px 0;
+		}
+		&__social {
+			margin: 3px 0 0 5.5%;
+			&-list {
+				padding: 22px 0 0 0;
+				display: flex;
+				gap: 16px;
+			}
+		}
+		& .collage__button {
+			margin: 0;
+		}
+	}
 }
 
 @media (max-width: 991px) {
@@ -615,6 +720,38 @@
 			}
 		}
 	}
+
+	.contacts {
+		padding: 87px 0 25px;
+		& .container_small {
+			padding: 0 124px;
+		}
+		&__row {
+			margin: 0 0 73px 0;
+		}
+		&__social {
+			list-style-type: none;
+			margin: 1px 0 0 35.2%;
+			&-list {
+				padding: 15px 0 0 0;
+			}
+		}
+		&__button {
+			display: flex;
+			align-items: flex-start;
+		}
+		&__text {
+			margin: 0 0 50px 0;
+		}
+		&__list {
+			gap: 59px;
+			margin: 0 0 48px 0;
+		}
+		& .block-title {
+			top: 34px;
+			left: -101px;	  
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -759,7 +896,43 @@
 			}
 		}
 	}
+
+	.contacts {
+		padding: 55px 0 2px;
+		& .container_small {
+			padding: 0 24px;
+		}
+		&__row {
+			padding: 0 0px 0 1px;
+			margin: 0 0 33px 0;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 32px;
+		}
+		&__text {
+			margin: 0 0 43px 0;
+			max-width: 320px;
+		}
+		&__list {
+			flex-wrap: wrap;
+			gap: 33px 50px;
+			margin: 0 0 33px 0;
+		}
+		&__city {
+			&-title {
+				margin: 0 0 8px 0;
+			}
+		}
+		&__button {
+			flex-direction: column-reverse;
+		}
+		&__social {
+			margin: 0 0 44px 0;
+		}
+	}
 }
+
 @media (max-width: 370px) {
 	.philosophy {
 		&__bottom-image {
