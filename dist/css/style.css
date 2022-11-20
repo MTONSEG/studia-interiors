@@ -2640,7 +2640,7 @@ body._lock {
 }
 .projects .block-title {
   top: 29px;
-  left: 30px;
+  left: 39px;
 }
 .projects__title, .projects__text {
   text-align: center;
@@ -2659,6 +2659,68 @@ body._lock {
   color: #828282;
   margin: 0 auto 132px;
   max-width: 450px;
+}
+
+.collages {
+  padding: 65px 0;
+  margin: 0 0 92px 0;
+}
+.collages__row {
+  position: relative;
+}
+.collages__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  max-width: 424px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+.collages__body {
+  max-width: 339px;
+  margin: 0 0 0 auto;
+}
+.collages__text {
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 45px;
+  position: relative;
+  z-index: 1;
+}
+.collages__button {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #080808;
+  background: #fff;
+  padding: 17px 48px;
+  display: inline-block;
+  border: 1px solid rgba(8, 8, 8, 0.32);
+}
+.collages__image {
+  position: absolute;
+  top: 45.6%;
+  left: 48.6%;
+  transform: translate(-50%, -50%);
+}
+.collages .block-title {
+  top: 40px;
+  left: -168px;
+}
+.collages_black {
+  background: #080808;
+  color: #fff;
+}
+.collages._main {
+  padding: 65px 0 177px;
+  margin: 0;
+}
+.collages._main .block-title {
+  left: -173px;
+  top: 53px;
 }
 
 .photos {
@@ -2822,6 +2884,46 @@ body._lock {
   .projects .gallery__body {
     padding: 29px 33px 35px 33px;
   }
+  .collages {
+    padding: 0;
+    margin: 0 0 104px 0;
+  }
+  .collages__image {
+    display: none;
+  }
+  .collages__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .collages__body {
+    margin: 0;
+    max-width: 448px;
+  }
+  .collages__title {
+    font-size: 32px;
+    line-height: 142.4%;
+    max-width: 365px;
+    margin-bottom: 25px;
+  }
+  .collages__text {
+    margin-bottom: 66px;
+  }
+  .collages__button {
+    padding: 14px 48px;
+  }
+  .collages .block-title {
+    top: 40px;
+    left: -141px;
+  }
+  .collages._main {
+    padding: 65px 0 142px;
+  }
+  .collages._main .block-title {
+    left: -142px;
+    top: 41px;
+  }
   .photos {
     min-height: 790px;
   }
@@ -2940,6 +3042,30 @@ body._lock {
   .projects .gallery__more::before {
     left: -12px;
   }
+  .collages {
+    margin: 0 0 84px 0;
+  }
+  .collages .block-title {
+    top: 40px;
+    left: -114px;
+  }
+  .collages__title {
+    max-width: 376px;
+    margin-bottom: 24px;
+  }
+  .collages__text {
+    margin-bottom: 52px;
+  }
+  .collages__button {
+    padding: 14px 48px 13px;
+  }
+  .collages._main {
+    margin: -1px 0 0 0;
+    padding: 49px 0 126px;
+  }
+  .collages._main .collages__title {
+    max-width: 360px;
+  }
   .photos {
     min-height: 831px;
   }
@@ -3034,6 +3160,35 @@ body._lock {
   }
   .projects .gallery__body {
     padding: 21px 22px 29px 22px;
+  }
+  .collages {
+    margin: 0 0 73px 0;
+  }
+  .collages__row {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .collages__title {
+    font-size: 26px;
+    line-height: 32px;
+    max-width: 297px;
+    margin-bottom: 10px;
+  }
+  .collages__text {
+    margin-bottom: 41px;
+  }
+  .collages._main {
+    padding: 49px 0 96px;
+  }
+  .collages._main .collages__title {
+    max-width: 297px;
+    margin-bottom: 20px;
+  }
+  .collages._main .collages__text {
+    margin-bottom: 40px;
+  }
+  .collages._main .collages__button {
+    padding: 14px 50px 13px;
   }
   .photos {
     min-height: 675px;
@@ -3984,68 +4139,6 @@ body._lock {
   width: 100%;
 }
 
-.collages {
-  padding: 65px 0;
-  margin: 0 0 92px 0;
-}
-.collages__row {
-  position: relative;
-}
-.collages__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 51px;
-  max-width: 424px;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 1;
-}
-.collages__body {
-  max-width: 339px;
-  margin: 0 0 0 auto;
-}
-.collages__text {
-  font-weight: 300;
-  line-height: 24px;
-  margin-bottom: 45px;
-  position: relative;
-  z-index: 1;
-}
-.collages__button {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #080808;
-  background: #fff;
-  padding: 17px 48px;
-  display: inline-block;
-  border: 1px solid rgba(8, 8, 8, 0.32);
-}
-.collages__image {
-  position: absolute;
-  top: 45.3%;
-  left: 48.6%;
-  transform: translate(-50%, -50%);
-}
-.collages .block-title {
-  top: 40px;
-  left: -168px;
-}
-.collages_black {
-  background: #080808;
-  color: #fff;
-}
-.collages._main {
-  padding: 65px 0 177px;
-  margin: 0;
-}
-.collages._main .block-title {
-  left: -173px;
-  top: 53px;
-}
-
 @media (max-width: 1220px) {
   .our-projects {
     padding: 54px 0 102px;
@@ -4125,46 +4218,6 @@ body._lock {
     width: 168px;
     height: 223px;
   }
-  .collages {
-    padding: 0;
-    margin: 0 0 104px 0;
-  }
-  .collages__image {
-    display: none;
-  }
-  .collages__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .collages__body {
-    margin: 0;
-    max-width: 448px;
-  }
-  .collages__title {
-    font-size: 32px;
-    line-height: 142.4%;
-    max-width: 365px;
-    margin-bottom: 25px;
-  }
-  .collages__text {
-    margin-bottom: 66px;
-  }
-  .collages__button {
-    padding: 14px 48px;
-  }
-  .collages .block-title {
-    top: 40px;
-    left: -141px;
-  }
-  .collages._main {
-    padding: 65px 0 142px;
-  }
-  .collages._main .block-title {
-    left: -142px;
-    top: 41px;
-  }
 }
 @media (max-width: 991px) {
   .our-projects {
@@ -4220,30 +4273,6 @@ body._lock {
     height: 331px;
     width: 251px;
   }
-  .collages {
-    margin: 0 0 84px 0;
-  }
-  .collages .block-title {
-    top: 40px;
-    left: -114px;
-  }
-  .collages__title {
-    max-width: 376px;
-    margin-bottom: 24px;
-  }
-  .collages__text {
-    margin-bottom: 52px;
-  }
-  .collages__button {
-    padding: 14px 48px 13px;
-  }
-  .collages._main {
-    margin: -1px 0 0 0;
-    padding: 49px 0 126px;
-  }
-  .collages._main .collages__title {
-    max-width: 360px;
-  }
 }
 @media (max-width: 575px) {
   .our-projects {
@@ -4296,35 +4325,6 @@ body._lock {
   .projects-more__image {
     height: 161px;
     width: 121px;
-  }
-  .collages {
-    margin: 0 0 73px 0;
-  }
-  .collages__row {
-    text-align: left;
-    align-items: flex-start;
-  }
-  .collages__title {
-    font-size: 26px;
-    line-height: 32px;
-    max-width: 297px;
-    margin-bottom: 10px;
-  }
-  .collages__text {
-    margin-bottom: 41px;
-  }
-  .collages._main {
-    padding: 49px 0 96px;
-  }
-  .collages._main .collages__title {
-    max-width: 297px;
-    margin-bottom: 20px;
-  }
-  .collages._main .collages__text {
-    margin-bottom: 40px;
-  }
-  .collages._main .collages__button {
-    padding: 14px 50px 13px;
   }
 }
 .one-project {
