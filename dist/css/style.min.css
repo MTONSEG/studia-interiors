@@ -1318,8 +1318,9 @@ body._lock {
   position: relative;
 }
 .header.header_black .nav {
-  position: static;
+  position: relative;
   display: block;
+  z-index: 10;
 }
 .header.header_black .nav__row {
   color: #080808;
@@ -1336,6 +1337,18 @@ body._lock {
 }
 .header.header_black .burger__icon span::before, .header.header_black .burger__icon span::after {
   background: #080808;
+}
+.header.header_black._active .nav__row, .header.header_black._active .nav__logo, .header.header_black._active .nav__send, .header.header_black._active .select__header {
+  color: #fff;
+}
+.header.header_black._active .select__body, .header.header_black._active .burger__icon span::before, .header.header_black._active .burger__icon span::after {
+  background: #fff;
+}
+.header.header_black._active .nav__send {
+  border-color: #fff;
+}
+.header.header_black .burger-menu .nav__link {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .title {
@@ -2025,7 +2038,7 @@ body._lock {
     margin: 2px 0 0 0;
   }
   .burger-menu .body-slide__footer {
-    width: 88.3%;
+    width: 79.3%;
   }
 }
 @media (max-width: 575px) {
@@ -2509,13 +2522,13 @@ body._lock {
 .collages__body {
   max-width: 339px;
   margin: 0 0 0 auto;
+  position: relative;
+  z-index: 1;
 }
 .collages__text {
   font-weight: 300;
   line-height: 23.8px;
   margin-bottom: 45px;
-  position: relative;
-  z-index: 1;
 }
 .collages__button {
   font-weight: 600;
@@ -2528,6 +2541,8 @@ body._lock {
   padding: 17px 48px;
   display: inline-block;
   border: 1px solid rgba(8, 8, 8, 0.32);
+  position: relative;
+  z-index: 3;
 }
 .collages__image {
   position: absolute;
@@ -4136,6 +4151,10 @@ body._lock {
   height: 100%;
   text-align: center;
   padding: 112px 0 0 0;
+  cursor: pointer;
+}
+.projects-more:hover {
+  background: rgba(255, 255, 255, 0.9);
 }
 .projects-more__text {
   font-weight: 700;

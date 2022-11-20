@@ -44,10 +44,12 @@ body._lock {
 		min-height: 100vh;
 		position: relative;
 	}
+	
 	&.header_black{
 		& .nav {
-			position: static;
+			position: relative;
 			display: block;
+			z-index: 10;
 			&__row {
 				color: #080808;
 			}
@@ -71,7 +73,28 @@ body._lock {
 				background: #080808;
 			}
 		}
-	}
+		&._active {
+			& .nav__row,
+			& .nav__logo,
+			& .nav__send,
+			& .select__header {
+				color: #fff;
+			}
+			& .select__body,
+			& .burger__icon span::before,
+			& .burger__icon span::after {
+				background: #fff;
+			}
+			& .nav__send {
+				border-color: #fff;
+			}
+		}
+		& .burger-menu {
+			& .nav__link {
+				color: rgba(255, 255, 255, 0.5);
+			}
+		}
+	}	
 }
 
 .title {

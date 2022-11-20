@@ -167,13 +167,13 @@
 	&__body {
 		max-width: 339px;
 		margin: 0 0 0 auto;
+		position: relative;
+		z-index: 1;
 	}
 	&__text {
 		font-weight: 300;
 		line-height: 23.8px;
 		margin-bottom: 45px;
-		position: relative;
-		z-index: 1;
 	}
 	&__button {
 		font-weight: 600;
@@ -186,6 +186,8 @@
 		padding: 17px 48px;
 		display: inline-block;
 		border: 1px solid rgb(8, 8, 8, 0.32);
+		position: relative;
+		z-index: 3;
 	}
 	&__image {
 		position: absolute;
