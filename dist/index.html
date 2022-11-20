@@ -413,6 +413,9 @@
 		<div class="popup">
 	<div class="container container_small">
 		<form action="#" class="popup__body">
+			<div class="popup__close">
+				<img src="img/icons/close-popup.svg" alt="close">
+			</div>
 			<div class="popup__top top-popup">
 				<h2 class="top-popup__title">
 					Calculate the cost of work
@@ -454,52 +457,70 @@
 					<label class="custom-radio">
 						<input type="radio" name="range" class="custom-radio__input" value="to 50">
 						<p class="custom-radio__text">to 50</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="8"></span>
 					</label>
 
 					<label class="custom-radio">
 						<input type="radio" name="range" class="custom-radio__input" value="50-150" checked>
 						<p class="custom-radio__text">50-150</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="9"></span>
 					</label>
 
-					<label class="custom-radio">
+					<label class="custom-radio d-none">
 						<input type="radio" name="range" class="custom-radio__input" value="150-250">
 						<p class="custom-radio__text">150-250</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="10"></span>
 					</label>
 
 					<label class="custom-radio">
 						<input type="radio" name="range" class="custom-radio__input" value="250-400">
 						<p class="custom-radio__text">250-400</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="11"></span>
 					</label>
 
 					<label class="custom-radio">
 						<input type="radio" name="range" class="custom-radio__input" value="400-600">
 						<p class="custom-radio__text">400-600</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="12"></span>
 					</label>
 
-					<label class="custom-radio">
+					<label class="custom-radio d-none">
 						<input type="radio" name="range" class="custom-radio__input" value="600-800">
 						<p class="custom-radio__text">600-800</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="13"></span>
 					</label>
 
-					<label class="custom-radio">
+					<label class="custom-radio d-none">
 						<input type="radio" name="range" class="custom-radio__input" value="800-1000">
 						<p class="custom-radio__text">800-1000</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="14"></span>
 					</label>
 
 					<label class="custom-radio">
 						<input type="radio" name="range" class="custom-radio__input" value="1000+">
 						<p class="custom-radio__text">1000+</p>
-						<span class="custom-radio__radio"></span>
+						<span class="custom-radio__radio" tabindex="15"></span>
 					</label>
 
 				</div>
+				<div class="bottom-popup__file add-file">
+					<label class="add-file__label">
+						<input type="file" class="add-file__input">
+						<div class="add-file__custom custom-file">
+							<div class="custom-file__icon" tabindex="16">
+								<img src="img/icons/plus.svg" alt="Add files" class="custom-file__icon-img">
+							</div>
+							<div class="custom-file__body">
+								<p class="custom-file__text">Attach your file</p>
+								<p class="custom-file__subtext">File size not more than 10 MB</p>
+							</div>
+						</div>
+					</label>
+					<button type="submit" class="add-file__btn">Send Request</button>
+				</div>
+				<p class="bottom-popup__text">
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				</p>
 			</div>
 		</form>
 	</div>

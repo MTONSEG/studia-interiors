@@ -271,15 +271,24 @@ body._lock {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 20;
 	width: 100%;
 	height: 100%;
 	background: #080808;
 	padding: 75px 0;
 	overflow: auto;
+	opacity: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	&._active {
+		z-index: 15;
+		visibility: visible;
+		opacity: 1;
+	}
 	&__body {
 		background: #F2F2F2;
 		padding: 56px 123px;
+		position: relative;
 	}
 	&__top,
 	&__bottom {
@@ -288,6 +297,12 @@ body._lock {
 		background: #fff;
 		box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
 		margin-bottom: 6px;
+	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: -200px;
+		cursor: pointer;
 	}
 }
 
@@ -355,6 +370,14 @@ body._lock {
 	&__title {
 		color: #3A3E4B;
 		margin-bottom: 24px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 14px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		color: #AFB0B2;
 	}
 	&__range {
 		display: flex;
@@ -431,8 +454,79 @@ body._lock {
 	& > input:checked + p {
 		color: #3A3E4B;
 	}
+	& > input:not(:disabled):not(:checked) ~ span:hover::before {
+		border: 2px solid black;
+	}
 }
 
+.add-file {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 39px;
+	&__input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+	&__btn {
+		background: #3A3E4B;
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 13px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		color: #FFFFFF;
+		padding: 14px 20px 17px;
+		width: 183px;
+		transition: .3s;
+		&:hover {
+			box-shadow: 0 0 5px #000;
+		}
+	}
+}
+
+.custom-file {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
+	&__icon {
+		flex: 0 0 39px;
+		height: 39px;
+		background: #F7F7F6;
+		border: 1px solid rgba(58, 62, 75, 0.08);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .3s;
+		&:hover {
+			border-color: #3A3E4B;
+		}
+		&:focus {
+			box-shadow: 0 0 3px #3A3E4B;
+		}
+	}
+	&__body:hover ~ .custom-file__icon {
+		border-color: #3A3E4B;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06em;
+		color: #3A3E4B;
+	}
+	&__subtext {
+		font-weight: 500;
+		font-size: 9px;
+		line-height: 11px;
+		letter-spacing: 0.06em;
+		color: rgba(58, 62, 75, 0.45);
+	}
+}
 
 @media (max-width: 1220px) {
 	.container {
@@ -622,5 +716,9 @@ body._lock {
 		&__social {
 			margin: 0 0 44px 0;
 		}
+	}
+
+	.d-none {
+		display: none;
 	}
 }
