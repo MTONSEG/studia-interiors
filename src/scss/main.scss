@@ -292,7 +292,7 @@
 }
 
 .contacts {
-	background: url('@img/constacs_bg.jpg') center/cover no-repeat;
+	background: url('@img/constacs_bg.jpg') 0px 0/100% 100% no-repeat;
 	padding: 119px 0 27px;
 	position: relative;
 	& .container_small {
@@ -301,11 +301,11 @@
 	&__row {
 		color: #fff;
 		position: relative;
-		margin: 0 0 96px 0;
+		margin: 0 0 94px 0;
 	}
 	& .block-title {
 		top: 23px;
-		left: -25px;
+		left: -156px;
 	}
 	&__title {
 		font-weight: 700;
@@ -322,6 +322,11 @@
 		line-height: 24px;
 		max-width: 390px;
 		margin: 0 0 64px 0;
+	}
+	&__list-wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
 	}
 	&__list {
 		margin: 0 0 65px 0;
@@ -343,11 +348,11 @@
 		color: #FAFAFA;
 	}
 	&__social {
-		margin: 2px 0 0 19.1%;
+		margin: 1px 1px 0 0;
 		&-list {
 			padding: 25px 0 0 0;
 			display: flex;
-			gap: 17px;
+			gap: 16px;
 		}
 	}
 	&._page {
@@ -383,7 +388,7 @@
 			}
 		}
 		&__article {
-			width: 55%;
+			width: 56%;
 			padding: 57px 0 0 10.1%;
 		}
 		&__title {
@@ -431,15 +436,15 @@
 		}
 		&__text {
 			padding: 0 0px 0 2px;
-			margin: 0 auto 117px;
+			margin: 0 auto 116px;
 		}
 		& .gallery {
 			margin-bottom: 72px;
 			&__row {
-				margin-bottom: 5px;
+				margin-bottom: 6px;
 			}
 			&__body {
-				padding: 29px 33px 35px 33px;
+				padding: 30px 33px 34px 32px;
 			}
 		}
 	}
@@ -477,7 +482,7 @@
 			left: -141px;
 		}
 		&._main {
-			padding: 65px 0 142px;
+			padding: 65px 0 143px;
 			& .block-title {
 				left: -142px;
 				top: 41px;		  
@@ -490,7 +495,10 @@
 		&__title {
 			font-size: 48px;
 			line-height: 59px;
-			margin: 11px 0 16px 0;
+			margin: 0 0 18px 0;
+		}
+		&__text {
+			margin: 0 0 15px 0;
 		}
 		&__image {
 			&._image-1 {
@@ -500,34 +508,34 @@
 				height: 195px;
 			}
 			&._image-2 {
-				top: 116px;
+				top: 115px;
 				left: 5px;
 				height: 151px;
 			}
 			&._image-3 {
-				top: -59px;
+				top: -60px;
 				right: 275px;
 				height: 195px;
 				z-index: 1;
 			}
 			&._image-4 {
 				top: 114px;
-				right: 99px;
+				right: 98px;
 				height: 154px;
 			}
 			&._image-5 {
-				bottom: 127px;
+				bottom: 151px;
 				right: -151px;
 				height: 239px;
 			}
 			&._image-6 {
 				left: calc(50% + 25px);
-				bottom: -1px;
+				bottom: 24px;
 				height: 120px;
 			}
 			&._image-7 {
-				left: 60px;
-				bottom: 90px;
+				left: 59px;
+				bottom: 114px;
 				height: 160px;
 			}
 			&._image-8 {
@@ -541,6 +549,10 @@
 		& .container_small {
 			padding: 0 159px;
 		}
+		& .block-title {
+			top: 33px;
+			left: -127px;
+		}
 		&__title {
 			font-size: 32px;
 			line-height: 39px;
@@ -552,17 +564,17 @@
 			}
 		}
 		&__text {
-			margin: 0 0 57px 0;
+			margin: 0 0 55px 0;
 		}
 		&__row {
-			margin: 0 0 90px 0;
+			margin: 0 0 89px 0;
 		}
 		&__list {
 			gap: 64px;
-			margin: 0 0 55px 0;
+			margin: 0 0 57px 0;
 		}
 		&__social {
-			margin: 3px 0 0 5.5%;
+			margin: 3px -2px 0 0px;
 			&-list {
 				padding: 22px 0 0 0;
 				display: flex;
@@ -631,6 +643,10 @@
 		&__text {
 			margin: 0 auto 96px;
 		}
+		& .block-title {
+			top: 26px;
+			left: 22px;
+		}
 		& .gallery {
 			&__row {
 				margin-bottom: 6px;
@@ -639,7 +655,7 @@
 				gap: 18px;
 			}
 			&__body {
-				padding: 29px 33px 38px 32px;
+				padding: 23px 33px 40px 32px;
 			}
 			&__more {
 				margin: 0 0 0 12px;
@@ -668,9 +684,13 @@
 		}
 		&._main {
 			margin: -1px 0 0 0;
-			padding: 49px 0 126px;
+			padding: 49px 0 124px;
 			& .collages__title {
 				max-width: 360px;
+			}
+			& .block-title {
+				left: -114px;
+				top: 41px;
 			}
 		}
 	}
@@ -680,7 +700,7 @@
 		&__title {
 			font-size: 44px;
 			line-height: 54px;
-			margin: 0 0px 22px 0;
+			margin: 41px 0px 22px 0;
 		}
 		&__image {
 			&._image-1 {
@@ -700,29 +720,29 @@
 			}
 			&._image-4 {
 				top: 132px;
-				right: -71px;
+				right: -72px;
 				height: 141px;
 			}
 			&._image-5 {
-				bottom: 132px;
+				bottom: 111px;
 				right: -250px;
 				height: 222px;
 			}
 			&._image-6 {
 				left: calc(50% + 56px);
-				bottom: -19px;
+				bottom: -37px;
 				height: 111px;
 			}
 			&._image-7 {
 				left: 44px;
-				bottom: 65px;
+				bottom: 46px;
 				height: 151px;
 			}
 		}
 	}
 
 	.contacts {
-		padding: 87px 0 25px;
+		padding: 87px 0 26px;
 		& .container_small {
 			padding: 0 124px;
 		}
@@ -741,7 +761,7 @@
 			align-items: flex-start;
 		}
 		&__text {
-			margin: 0 0 50px 0;
+			margin: 0 0 51px 0;
 		}
 		&__list {
 			gap: 59px;
@@ -790,7 +810,7 @@
 	}
 
 	.projects {
-		padding: 80px 0 303px 1px;
+		padding: 80px 0 0 1px;
 		&__title,
 		&__text {
 			text-align: left;
@@ -826,7 +846,7 @@
 			margin-bottom: 41px;
 		}
 		&._main {
-			padding: 49px 0 96px;
+			padding: 60px 0 97px;
 			& .collages__title {
 				max-width: 297px;
 				margin-bottom: 20px;
@@ -845,9 +865,10 @@
 		&__title {
 			font-size: 32px;
 			line-height: 39px;
-			margin: 30px 0 15px 0;
+			margin: 0 0 15px 0;
 		}
 		&__text {
+			margin: 0 0 109px 0;
 			max-width: 287px;
 		}
 		&__image {
@@ -864,7 +885,7 @@
 			&._image-3 {
 				height: 114px;
 				top: 112px;
-				right: -92px;
+				right: -94px; 
 			}
 			&._image-4 {
 				top: 132px;
@@ -873,25 +894,25 @@
 				display: none;
 			}
 			&._image-5 {
-				bottom: 123px;
-				right: -138px;
+				bottom: 262px;
+				right: -140px;
 				height: 139px;
 			}
 			&._image-6 {
-				left: calc(50% + 41px);
-				bottom: -11px;
+				left: calc(50% + 43px);
+				bottom: 127px;
 				height: 70px;
 			}
 			&._image-7 {
 				left: 22px;
-				bottom: 145px;
+				bottom: 284px;
 				height: 70px;
 				z-index: 1;
 			}
 			&._image-8 {
 				height: 123px;
-				left: -97px;
-				bottom: 69px;
+				left: -99px;
+				bottom: 208px;
 				display: inline-block;
 			}
 		}
