@@ -15,33 +15,35 @@
 					<h2 class="contacts__title _mobile">Get in touch</h2>
 					<p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
 						mauris vitae posuere. </p>
-					<ul class="contacts__list">
-						<li class="contacts__city">
-							<h3 class="contacts__city-title">Kyiv</h3>
+					<div class="contacts__list-wrapper">
+						<ul class="contacts__list">
+							<li class="contacts__city">
+								<h3 class="contacts__city-title">Kyiv</h3>
 
-							<p class="contacts__addr">
-								<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
-								6391 Elgin St. Celina,<br>
-								Delaware 10299
-							</p>
-						</li>
-						<li class="contacts__city">
-							<h3 class="contacts__city-title">Lviv</h3>
-							<p class="contacts__addr">
-								<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
-								6391 Elgin St. Celina,<br>
-								Delaware 10299
-							</p>
-						</li>
-						<li class="contacts__city">
-							<h3 class="contacts__city-title">Kharkiv</h3>
-							<p class="contacts__addr">
-								<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
-								6391 Elgin St. Celina,<br>
-								Delaware 10299
-							</p>
-						</li>
-						<li data-da=".contacts__button, 991, 1" class="contacts__social">
+								<p class="contacts__addr">
+									<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
+									6391 Elgin St. Celina,<br>
+									Delaware 10299
+								</p>
+							</li>
+							<li class="contacts__city">
+								<h3 class="contacts__city-title">Lviv</h3>
+								<p class="contacts__addr">
+									<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
+									6391 Elgin St. Celina,<br>
+									Delaware 10299
+								</p>
+							</li>
+							<li class="contacts__city">
+								<h3 class="contacts__city-title">Kharkiv</h3>
+								<p class="contacts__addr">
+									<a href="tel:2095550104" class="contacts__number">(209) 555-0104</a><br>
+									6391 Elgin St. Celina,<br>
+									Delaware 10299
+								</p>
+							</li>
+						</ul>
+						<div data-da=".contacts__button, 991, 1" class="contacts__social">
 							<a href="#" class="contacts__email body-slide__link">
 								info@gmail.com
 							</a>
@@ -50,8 +52,8 @@
 								<a href="#" class="contacts__link body-slide__link">In</a>
 								<a href="#" class="contacts__link body-slide__link">Be</a>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 					<div class="contacts__button">
 						<a href="#" class="collages__button">Make request</a>
 					</div>
@@ -61,8 +63,9 @@
 				@@include('./html/footer.html',{})
 			</footer>
 		</section>
-
-		<script src="js/app.min.js"></script>
+		@@include('./html/popup.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

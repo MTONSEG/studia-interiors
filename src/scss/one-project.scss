@@ -9,7 +9,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 130px 197px 27px;
+		padding: 127px 197px 27px;
+		max-width: 1440px;
 	}
 	&__title {
 		color: #fff;
@@ -38,7 +39,12 @@
 		}
 	}
 	&__share {
-		padding: 38px 43px;
+		padding: 34px 42px;
+		& .container {
+			padding: 0;
+		}
+	}
+	&__share-body {
 		display: flex;
 		align-items: center;
 	}
@@ -52,6 +58,7 @@
 .project-article {
 	padding: 140px 0;
 	&__title {
+		font-weight: 700;
 		font-size: 16px;
 		line-height: 22px;
 		margin-bottom: 14px;

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20221121181630">
 	<title>Antrax IT - Italian factory for the production </title>
 </head>
 
@@ -13,7 +13,6 @@
 	<div class="wrapper">
 		<header class="header header_black">
 			<nav class="header__nav nav">
-	
 	<div class="burger-menu">
 		<div class="container">
 			<div class="burger-menu__row">
@@ -54,7 +53,7 @@
 	<div class="container">
 		<div class="nav__row">
 			<div class="nav__logo">
-				logo
+				<a href="index.html" class="nav__logo-link">logo</a>
 			</div>
 			<div class="nav__body">
 				<div class="nav__burger burger">
@@ -146,7 +145,7 @@
 			</div>
 			<div class="container">
 				<div class="body-news__image">
-					<img src="img/one-news_image-1.jpg" alt="Image Interior">
+					<picture><source srcset="img/one-news_image-1.webp" type="image/webp"><img src="img/one-news_image-1.jpg" alt="Image Interior"></picture>
 				</div>
 			</div>
 		</section>
@@ -195,11 +194,11 @@
 		<section class="news-gallery">
 			<div class="container">
 				<div class="news-gallery__top">
-					<img src="img/news-gallery_img-1.jpg" alt="Image 1" class="news-gallery__image">
+					<picture><source srcset="img/news-gallery_img-1.webp" type="image/webp"><img src="img/news-gallery_img-1.jpg" alt="Image 1" class="news-gallery__image"></picture>
 				</div>
 				<div class="news-gallery__bottom">
-					<img src="img/news-gallery_img-2.jpg" alt="Image 2" class="news-gallery__image">
-					<img src="img/news-gallery_img-3.jpg" alt="Image 3" class="news-gallery__image">
+					<picture><source srcset="img/news-gallery_img-2.webp" type="image/webp"><img src="img/news-gallery_img-2.jpg" alt="Image 2" class="news-gallery__image"></picture>
+					<picture><source srcset="img/news-gallery_img-3.webp" type="image/webp"><img src="img/news-gallery_img-3.jpg" alt="Image 3" class="news-gallery__image"></picture>
 				</div>
 			</div>
 		</section>
@@ -251,7 +250,7 @@
 						<div class="our-news__slider-wrap swiper-wrapper">
 							<div class="our-news__slide swiper-slide">
 								<div class="our-news__image">
-									<img src="img/our-news_1.jpg" alt="Antrax IT ">
+									<picture><source srcset="img/our-news_1.webp" type="image/webp"><img src="img/our-news_1.jpg" alt="Antrax IT "></picture>
 								</div>
 								<h3 class="our-news__item-title">
 									Antrax IT - Italian factory for the production of radiators
@@ -262,7 +261,7 @@
 							</div>
 							<div class="our-news__slide swiper-slide">
 								<div class="our-news__image">
-									<img src="img/our-news_2.jpg" alt="Antrax IT ">
+									<picture><source srcset="img/our-news_2.webp" type="image/webp"><img src="img/our-news_2.jpg" alt="Antrax IT "></picture>
 								</div>
 								<h3 class="our-news__item-title">
 									Antrax IT - Italian factory for the production of radiators
@@ -273,7 +272,7 @@
 							</div>
 							<div class="our-news__slide swiper-slide">
 								<div class="our-news__image">
-									<img src="img/our-news_3.jpg" alt="Antrax IT ">
+									<picture><source srcset="img/our-news_3.webp" type="image/webp"><img src="img/our-news_3.jpg" alt="Antrax IT "></picture>
 								</div>
 								<h3 class="our-news__item-title">
 									Antrax IT - Italian factory for the production of radiators
@@ -284,7 +283,7 @@
 							</div>
 							<div class="our-news__slide swiper-slide">
 								<div class="our-news__image">
-									<img src="img/our-news_4.jpg" alt="Antrax IT ">
+									<picture><source srcset="img/our-news_4.webp" type="image/webp"><img src="img/our-news_4.jpg" alt="Antrax IT "></picture>
 								</div>
 								<h3 class="our-news__item-title">
 									Antrax IT - Italian factory for the production of radiators
@@ -319,9 +318,124 @@
 	</div>
 </div>
 		</footer>
+		<div class="popup">
+	<div class="container container_small">
+		<form action="#" class="popup__body">
+			<div class="popup__close">
+				<img src="img/icons/close-popup.svg" alt="close">
+			</div>
+			<div class="popup__top top-popup">
+				<h2 class="top-popup__title">
+					Calculate the cost of work
+				</h2>
+				<div class="top-popup__form">
+					<input type="text" name="Name" class="top-popup__input" tabindex="1" placeholder="Name">
+					<input type="text" name="Last Name" class="top-popup__input" tabindex="2" placeholder="Last name">
+					<input type="tel" name="Phone" class="top-popup__input" tabindex="3" placeholder="Phone">
+					<input type="text" name="City" class="top-popup__input" tabindex="4" placeholder="Your city">
+					<input type="email" name="Email" class="top-popup__input" tabindex="5" placeholder="Email">
+					<div class="top-popup__select select">
+						<div class="select__header" tabindex="6">
+							<div class="select__current">
+								Property type
+							</div>
+							<img src="img/icons/popup-arr.svg" alt="select" class="select__ic-popup">
+						</div>
+						<ul class="select__body">
+							<li class="select__item">
+								Loft
+							</li>
+							<li class="select__item">
+								Modern
+							</li>
+							<li class="select__item">
+								Hi-Tech
+							</li>
+						</ul>
+					</div>
+				</div>
+				<textarea type="text" name="Comment" name="Comment" class="top-popup__textarea" cols="1" tabindex="7"
+					minlength="15" maxlength="99999" placeholder="Your comment" required></textarea>
+			</div>
+			<div class="popup__bottom bottom-popup">
+				<h4 class="bottom-popup__title">
+					Area (m2)
+				</h4>
+				<div class="bottom-popup__range">
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="to 50">
+						<p class="custom-radio__text">to 50</p>
+						<span class="custom-radio__radio" tabindex="8"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="50-150" checked>
+						<p class="custom-radio__text">50-150</p>
+						<span class="custom-radio__radio" tabindex="9"></span>
+					</label>
+
+					<label class="custom-radio d-none">
+						<input type="radio" name="range" class="custom-radio__input" value="150-250">
+						<p class="custom-radio__text">150-250</p>
+						<span class="custom-radio__radio" tabindex="10"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="250-400">
+						<p class="custom-radio__text">250-400</p>
+						<span class="custom-radio__radio" tabindex="11"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="400-600">
+						<p class="custom-radio__text">400-600</p>
+						<span class="custom-radio__radio" tabindex="12"></span>
+					</label>
+
+					<label class="custom-radio d-none">
+						<input type="radio" name="range" class="custom-radio__input" value="600-800">
+						<p class="custom-radio__text">600-800</p>
+						<span class="custom-radio__radio" tabindex="13"></span>
+					</label>
+
+					<label class="custom-radio d-none">
+						<input type="radio" name="range" class="custom-radio__input" value="800-1000">
+						<p class="custom-radio__text">800-1000</p>
+						<span class="custom-radio__radio" tabindex="14"></span>
+					</label>
+
+					<label class="custom-radio">
+						<input type="radio" name="range" class="custom-radio__input" value="1000+">
+						<p class="custom-radio__text">1000+</p>
+						<span class="custom-radio__radio" tabindex="15"></span>
+					</label>
+
+				</div>
+				<div class="bottom-popup__file add-file">
+					<label class="add-file__label">
+						<input type="file" class="add-file__input">
+						<div class="add-file__custom custom-file">
+							<div class="custom-file__icon" tabindex="16">
+								<img src="img/icons/plus.svg" alt="Add files" class="custom-file__icon-img">
+							</div>
+							<div class="custom-file__body">
+								<p class="custom-file__text">Attach your file</p>
+								<p class="custom-file__subtext">File size not more than 10 MB</p>
+							</div>
+						</div>
+					</label>
+					<button type="submit" class="add-file__btn">Send Request</button>
+				</div>
+				<p class="bottom-popup__text">
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20221121181630"></script>
 </body>
 
 </html>

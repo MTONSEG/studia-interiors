@@ -48,6 +48,7 @@ const newsSlider = new Swiper('.news-slider', {
 const ourNewsSlider = new Swiper('.our-news__slider', {
 	slidesPerView: "auto",
 	spaceBetween: 26,
+	slidesPerGroup: 2,
 	freeMode: true,
 	allowTouchMove: true,
 	mousewheel: {

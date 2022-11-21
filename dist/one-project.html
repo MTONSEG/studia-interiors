@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20221121181630">
 	<title>Our Projects</title>
 </head>
 
@@ -13,7 +13,6 @@
 	<div class="wrapper">
 		<header class="header">
 			<nav class="header__nav nav">
-	
 	<div class="burger-menu">
 		<div class="container">
 			<div class="burger-menu__row">
@@ -54,7 +53,7 @@
 	<div class="container">
 		<div class="nav__row">
 			<div class="nav__logo">
-				logo
+				<a href="index.html" class="nav__logo-link">logo</a>
 			</div>
 			<div class="nav__body">
 				<div class="nav__burger burger">
@@ -130,26 +129,30 @@
 
 			</div>
 			<div class="one-project__share">
-				<span>Share:</span>
-				<div class="one-project__socials">
-					<a href="#" class="one-project__link">
-						<img src="img/icons/project_fb.svg" alt="Facebook">
-					</a>
-					<a href="#" class="one-project__link">
-						<img src="img/icons/project_tt.svg" alt="Twitter">
-					</a>
-					<a href="#" class="one-project__link">
-						<img src="img/icons/project_in.svg" alt="Linkedin">
-					</a>
-					<a href="#" class="one-project__link">
-						<img src="img/icons/project_share.svg" alt="Share">
-					</a>
+				<div class="container">
+					<div class="one-project__share-body">
+						<span>Share:</span>
+						<div class="one-project__socials">
+							<a href="#" class="one-project__link">
+								<img src="img/icons/project_fb.svg" alt="Facebook">
+							</a>
+							<a href="#" class="one-project__link">
+								<img src="img/icons/project_tt.svg" alt="Twitter">
+							</a>
+							<a href="#" class="one-project__link">
+								<img src="img/icons/project_in.svg" alt="Linkedin">
+							</a>
+							<a href="#" class="one-project__link">
+								<img src="img/icons/project_share.svg" alt="Share">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<article class="project-article">
 			<div class="container container_small">
-				<h2 class="project-article__title title">
+				<h2 class="project-article__title">
 					Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur.
 				</h2>
 				<p class="project-article__text">
@@ -183,7 +186,7 @@
 			<section class="collages collages_black _main">
 				<div class="container container_small">
 					<div class="collages__row">
-						<img src="img/main_colage.png" alt="photo collage" class="collages__image">
+						<picture><source srcset="img/main_colage.webp" type="image/webp"><img src="img/main_colage.png" alt="photo collage" class="collages__image"></picture>
 						<h2 class="collages__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
 						<div class="collages__body">
 							<p class="collages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -192,15 +195,15 @@
 							<a href="" class="collages__button">Make request</a>
 						</div>
 					</div>
-					
+
 				</div>
 			</section>
 			<section class="next-project">
 				<div class="container">
-					<h4 class="next-project__subtitle title">Next project</h4>
+					<h4 class="next-project__subtitle">Next project</h4>
 					<h3 class="next-project__title title">Perfect proportions</h3>
 					<div class="next-project__image">
-						<img src="img/one-project_footer.jpg" alt="Image Footer">
+						<picture><source srcset="img/one-project_footer.webp" type="image/webp"><img src="img/one-project_footer.jpg" alt="Image Footer"></picture>
 					</div>
 				</div>
 			</section>
@@ -208,7 +211,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20221121181630"></script>
 </body>
 
 </html>

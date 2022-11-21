@@ -155,7 +155,7 @@
 	&__title {
 		max-width: 424px;
 		line-height: 51px;
-		margin-bottom: 23px;
+		margin-bottom: 25px;
 	}
 	&__text {
 		font-weight: 300;
@@ -277,9 +277,9 @@
 
 @media (max-width: 991px) {
 	.news {
-		padding: 47px 0 108px;
+		padding: 48px 0 108px;
 		&__head {
-			margin-bottom: 98px;
+			margin-bottom: 96px;
 		}
 		&__list {
 			gap: 28px;
@@ -329,7 +329,7 @@
 			padding: 104px 125px 83px;
 		}
 		&__title {
-			margin-bottom: 19px;
+			margin-bottom: 21px;
 		}
 		&__text {
 			margin: 0px 0 31px;
