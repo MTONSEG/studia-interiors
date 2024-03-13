@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title":"Page not "})
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			@@include('html/nav.html',{})
+		</header>
+
+		<section class="contacts _404">
+			<div class="container container_small">
+				<div class="row">
+					<h1 class="row__title">
+						Page not found
+						<div class="block-title">
+							404
+						</div>
+					</h1>
+					<p class="row__text">
+						Something went wrong. Page not found
+					</p>
+					<a href="#" class="row__btn more">go to main</a>
+				</div>
+			</div>
+			<footer>
+				@@include('./html/footer.html',{})
+			</footer>
+		</section>
+		@@include('./html/popup.html',{})
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
